@@ -79,6 +79,11 @@ nav li a:hover {
 	text-decoration-color: rgb(4, 215, 159);
 }
 
+/* nav li a:active {
+	text-decoration-line: underline;
+	text-decoration-color: rgb(4, 215, 159);
+} */
+
 
 
 section {
@@ -112,9 +117,11 @@ section a:hover{
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: center;
+	/* opacity: 0.5; */
 	color: white;
 	width: 100%;
 }
+
 
 
 
@@ -258,7 +265,7 @@ div p{
 	border-radius: 9%;
   width: 200px;
 	height: 150px; 
-	background: rgb(106, 106, 238);
+	background: rgb(4, 215, 159);
 	font-family: 'lato','light', 'sans-serif';
 	color: black;
 }
@@ -341,11 +348,11 @@ footer div{
 	padding-left: 0.3em;
 }
 
-.flow h1 a:visited{
-	color: black;
+.flow p a:visited {
+	color: blue;
 }
 
-.flow h1 a:hover{
+.flow p a:hover{
 	color: rgb(4, 215, 159);
 }
 
