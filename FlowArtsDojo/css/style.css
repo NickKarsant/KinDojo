@@ -67,6 +67,13 @@ div a:visited {
 	color: blue;
 }
 
+.donate2 a:visited{
+	color: black;
+}
+.donate a:visited{
+	color: black;
+}
+
 .nun {
 	border: 2px solid black;
 }
