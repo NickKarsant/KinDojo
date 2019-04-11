@@ -51,6 +51,9 @@ nav {
 	right: 1em; 
 	transform: translateY(-50%);
 }
+nav a:visited{
+	color: white;
+}
 
 nav li {
 	font-size: 2vw;
@@ -63,7 +66,7 @@ a:link {
   text-decoration: none;
 }
 
-div a:visited {
+a:visited {
 	color: blue;
 }
 
@@ -128,12 +131,9 @@ section a:hover{
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: center;
-	/* opacity: 0.5; */
 	color: white;
 	width: 100%;
 }
-
-
 
 
 .cover a, .donate a {
@@ -203,7 +203,7 @@ section a:hover{
 	background-color: white;
 	font-size: 0.5em;
 	padding-bottom: 12em;
-}
+} 
 
 .donate p {
 	width: 100%;
@@ -260,8 +260,12 @@ div p{
 	padding-top: 1.3em;
 }
 
+.contact li a:hover{
+	color: rgb(4, 215, 159);
+}
 
-.donate2 p {
+
+div.donate2 p {
 	color: white;
 	text-align: left;
 	padding-top: 1em;
@@ -271,13 +275,14 @@ div p{
 	font-size: 0.7em;
 }
 
-.donate2 a {
+div.donate2 a {
 	padding: .5em 2em;
 	border-radius: 9%;
   width: 200px;
 	height: 150px; 
 	background: rgb(4, 215, 159);
 	font-family: 'lato','light', 'sans-serif';
+	font-size: 0.8em;
 	color: black;
 }
 
