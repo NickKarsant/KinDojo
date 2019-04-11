@@ -80,7 +80,8 @@ nav li a:hover {
 }
 
 nav li a.current {
-	border-bottom: 2px solid rgb(4, 215, 159);
+	text-decoration-line: underline;
+	text-decoration-color: rgb(4, 215, 159);
 }
 
 
