@@ -63,6 +63,10 @@ a:link {
   text-decoration: none;
 }
 
+div a:visited {
+	color: blue;
+}
+
 .nun {
 	border: 2px solid black;
 }
