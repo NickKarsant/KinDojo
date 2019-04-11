@@ -79,10 +79,9 @@ nav li a:hover {
 	text-decoration-color: rgb(4, 215, 159);
 }
 
-/* nav li a:active {
-	text-decoration-line: underline;
-	text-decoration-color: rgb(4, 215, 159);
-} */
+nav li a.current {
+	border-bottom: 2px solid rgb(4, 215, 159);
+}
 
 
 
