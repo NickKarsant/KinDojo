@@ -113,6 +113,10 @@ section a:hover{
 	background-color: black;
 }
 
+/* remove black background 
+remove margin from hero image
+add javascript/jquery to engage black nav bar at top
+*/
 
 
 .cover div{
@@ -172,6 +176,9 @@ section a:hover{
 	align-items: center;
 	padding: 0 5em;
 	line-height: 1.5em;
+	width: 45em;
+	margin: auto;
+	text-align: left;
 }
 
 .mission h2 {
@@ -181,7 +188,7 @@ section a:hover{
 	text-decoration-line: overline;
 	text-decoration-style: solid; 
 	letter-spacing: 1.3px;
-	font-size: 3vw;
+	font-size: 1.5em;
 }
 
 
@@ -340,7 +347,7 @@ footer div{
 	font-family: 'lato', 'light', 'sans-serif';
 	margin: 0 auto;
 	padding: 1em 1em 1em 1em;
-	font-size: 1em;
+	font-size: 0.8em;
 
 }
 
@@ -352,7 +359,7 @@ footer div{
 	font-family: 'lato', 'light', 'sans-serif';
 	margin: 0 2em 3em 0;
 	padding: 1em 1em 0 1em;
-	font-size: 1em;
+	font-size: 0.7em;
 }
 
 .flow{
@@ -379,7 +386,7 @@ footer div{
 	font-family: 'lato', 'light', 'sans-serif';
 	margin-right: 2em;
 	padding: 1em 1em 0 1em;
-	font-size: 1em;
+	font-size: 0.7em;
 }
 
 .head h1{
@@ -413,9 +420,11 @@ footer div{
 }	
 
 .course {
-	padding: 6em 0;
-	margin: 3em 0;
+	padding: 4em 0;
+	margin: 1em 0;
 	position: relative;
+	font-size: 0.8em;
+	line-height: 1.6em;
 }
 .course a{
 	text-decoration: underline;
@@ -444,7 +453,7 @@ footer div{
 }
 
 .classes h1{
-	font-size: 3vw;
+	font-size: 2em;
 	padding: .5em 0;
 	text-align: center;
 }
@@ -492,6 +501,7 @@ footer div{
 .firstcourse {
 	padding: 3em 0;
 	position: relative;
+	font-size: 0.8em;
 }
 
 
@@ -505,34 +515,43 @@ footer div{
 
 
 input[type="submit"]{
-	width: 15%;
+	width: 10%;
 	background-color: rgb(4, 215, 159);
 }
 
 input[type="reset"]{
-	width: 15%;
+	width: 10%;
 	background-color: rgb(242, 243, 243);
 } 
 
 .form textarea{
-	font-size: 1em;
+	font-size: 0.5em;
 	border: 1px solid;
 	box-shadow: 4px 8px #888888;
 	padding: 0.1em;
+	width: 20%;
 }
 
+.subject{
+	width: 20%;
+	font-size: 0.5em;
+	padding: 0.3em;
+	box-shadow: 4px 8px #888888;
+}
+
+
 .form{
-	font-size: 2em;
+	font-size: 0.8em;
 	margin-bottom: 8%;
 }
 
 
-.form input{
+.submit{
 	border: 1px solid;
-	padding: 0.5em;
-	margin: 0.5em;
+	padding: 0.3em;
+	margin: 0.5em 0.5em 0.5em 0;
 	box-shadow: 4px 8px #888888;
-	font-size: 3vw;
+	font-size: 1em;
 } 
 
 
@@ -703,26 +722,41 @@ input[type="reset"]{
 	}
 
 
-
-	textarea{
-	border: 1px solid;
-	box-shadow: 5px 10px #888888;
-	font-size: 0.5em;
-	padding: 0.1em;
-	}
-
-	.form input{
-	border: 1px solid;
-	padding: 0.5em;
-	margin: 0.5em 0.5em 0.5em 0;
-	box-shadow: 5px 10px #888888;
-	font-size: 1em
-	}
-
 	.form{
-		font-size: 0.9em;
+		font-size: 1em;
 		margin-top: 2em;
 	}
+
+
+	.form textarea{
+		font-size: 1em;
+		border: 1px solid;
+		box-shadow: 4px 8px #888888;
+		padding: 0.1em;
+		width: 60%;
+	}
+	
+	.subject{
+		width: 30%;
+		font-size: 1em;
+		padding: 0.3em;
+		box-shadow: 4px 8px #888888;
+	}
+	
+	
+	.form{
+		font-size: 1em;
+		margin-bottom: 8%;
+	}
+	
+	
+	.submit{
+		border: 1px solid;
+		padding: 0.3em;
+		margin: 2em 2em 0.5em 0;
+		box-shadow: 4px 8px #888888;
+		font-size: 1em;
+	} 
 }
 
 
@@ -748,18 +782,35 @@ input[type="reset"]{
 		line-height:2em;
 	}
 
-	.form{
-		font-size: 0.9em;
-		margin-top: 2em;
-	}
-
-	.form input{
+	.form textarea{
+		font-size: 0.7em;
 		border: 1px solid;
-		padding: 0.5em;
-		margin: 0.5em;
-		box-shadow: 5px 10px #888888;
-		font-size: 1em;
-		}
+		box-shadow: 4px 8px #888888;
+		padding: 0.1em;
+		width: 60%;
+	}
+	
+	.subject{
+		width: 30%;
+		font-size: 0.7em;
+		padding: 0.3em;
+		box-shadow: 4px 8px #888888;
+	}
+	
+	
+	.form{
+		font-size: 1.3em;
+		margin-bottom: 8%;
+	}
+	
+	
+	.submit{
+		border: 1px solid;
+		padding: 0.5em 1.5em 0.5em 1.2em;
+		margin: 2em 3em 0.5em 0;
+		box-shadow: 4px 8px #888888;
+		font-size: 0.7em;
+	} 
 }
 
 
@@ -1089,25 +1140,35 @@ input[type="reset"]{
 
 
 
-	textarea{
-	border: 1px solid;
-	box-shadow: 5px 10px #888888;
-	font-size: 0.7em;
-	padding: 0.1em;
-	}
-
-	.form input{
-	border: 1px solid;
-	padding: 0.5em;
-	margin: 1em;
-	box-shadow: 5px 10px #888888;
-	font-size: 0.6em
+	.form textarea{
+		font-size: 1em;
+		border: 1px solid;
+		box-shadow: 4px 8px #888888;
+		padding: 0.1em;
+		width: 50%;
 	}
 	
-	.form{
-		font-size: 2em;
-		margin-top: 1em;
+	.subject{
+		width: 20%;
+		font-size: 1em;
+		padding: 0.3em;
+		box-shadow: 4px 8px #888888;
 	}
+	
+	
+	.form{
+		font-size: 1em;
+		margin-bottom: 8%;
+	}
+	
+	
+	.submit{
+		border: 1px solid;
+		padding: 0.5em;
+		margin: 3em 3em 0.5em 0;
+		box-shadow: 4px 8px #888888;
+		font-size: 1em;
+	} 
 
 }
 
@@ -1256,24 +1317,38 @@ input[type="reset"]{
 		max-width: 40%;
 	}
 
-	.form {
-		margin-top: 3em;
-	}
+
+
 
 	.form textarea{
-		border: 1px solid;
-		padding: 5px;
-		box-shadow: 5px 10px #888888;
 		font-size: 1em;
-	}
-	.form input{
 		border: 1px solid;
-		padding: 1em 4em 1em 2em ;
-		margin: 1em 2em;
-		box-shadow: 5px 10px #888888;
-		font-size: 0.7em
+		box-shadow: 4px 8px #888888;
+		padding: 0.1em;
+		width: 90%;
 	}
-
+	
+	.subject{
+		width: 50%;
+		font-size: 1em;
+		padding: 0.3em;
+		box-shadow: 4px 8px #888888;
+	}
+	
+	
+	.form{
+		font-size: 2em;
+		margin-bottom: 8%;
+	}
+	
+	
+	.submit{
+		border: 1px solid;
+		padding: 1em 3.4em 1em 1em;
+		margin: 2em 2em 2em 0;
+		box-shadow: 4px 8px #888888;
+		font-size: 1em;
+	} 
 
 }
 
@@ -1281,93 +1356,103 @@ input[type="reset"]{
 
 
 
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-device-width:320px ) {
 		
-		header {
-			padding: 0 2em;
-			height: 6%;
-		}
+	header {
+		padding: 0 2em;
+		height: 6%;
+	}
 
-		header img{
-			margin-top: 1em;
-			max-width: 30%;
-		}
+	header img{
+		margin-top: 1em;
+		max-width: 30%;
+	}
 
-		nav li a{
-			font-size: 1.5em;
-		}
+	nav li a{
+		font-size: 1.5em;
+	}
 
-		.cover p{
-			font-size: 0.9em;
-			justify-content: center;
-			align-items: flex-start;
-		}
+	.cover p{
+		font-size: 0.9em;
+		justify-content: center;
+		align-items: flex-start;
+	}
 
-		.mission h2{
-			font-size: 1.4em;
-			padding: 0.5em 0;
-		}
-		
-		.mission p{
-			font-size: 0.5em;
-			padding: 0;
-		}
+	.mission h2{
+		font-size: 1.4em;
+		padding: 0.5em 0;
+	}
+	
+	.mission p{
+		font-size: 0.5em;
+		padding: 0;
+	}
 
-		.donate img{
-			width: 100%;
-		}
+	.donate img{
+		width: 100%;
+	}
 
-		.donate h2{
-			font-size: 2.3em;
-		}
+	.donate h2{
+		font-size: 2.3em;
+	}
 
-		.donate p{
-			font-size: 2em;
-		}
+	.donate p{
+		font-size: 2em;
+	}
 
-		footer h4{
-			font-size: 1em;
-		}
+	footer h4{
+		font-size: 1em;
+	}
 
-		div h4 {
-			color: white;
-			text-align: left;
-			letter-spacing: .1em;
-			margin: 0;
-			font-size: 1em;
-		}
+	div h4 {
+		color: white;
+		text-align: left;
+		letter-spacing: .1em;
+		margin: 0;
+		font-size: 1em;
+	}
 
-		.donate2 p{
-			line-height: 1.5em; 
-			letter-spaceing: 0;
-			word-spacing: .1em;
-			font-size: 0.7em;
-			width: 100%;
-		}
+	.donate2 p{
+		line-height: 1.5em; 
+		letter-spaceing: 0;
+		word-spacing: .1em;
+		font-size: 0.7em;
+		width: 100%;
+	}
 
-		.donate2 a{
-			font-size: 0.6em; 
-			padding: 1.5em 3.8em;
-		}
-
-
-
-		section h1{
-			font-size: 1.6em;
-		}
+	.donate2 a{
+		font-size: 0.6em; 
+		padding: 1.5em 3.8em;
+	}
 
 
-		.instructor h1{
-			padding-left: 0.6em;
-		}
 
-		.instructor p{
-			font-size: 0.6em;
-			word-spacing: 0.3em;
-		}
+	section h1{
+		font-size: 1.6em;
+	}
 
-		.instructor div{
-			width: 100%;
+
+	.instructor h1{
+		padding-left: 0.6em;
+	}
+
+	.instructor p{
+		font-size: 0.6em;
+		word-spacing: 0.3em;
+	}
+
+	.instructor div{
+		width: 100%;
 	}
 
 	.instructor img{
@@ -1375,64 +1460,82 @@ input[type="reset"]{
 	}
 
 
-		.flow h1{
-			padding-left: 1em;
-
-		}
-		.flow p{
-			font-size: 0.6em;
-			word-spacing: 0.01em;
-			padding-left: 1em;
-		}
-
-		.about{
-			font-size: 0.6em;
-			word-spacing: 0.01em;
-			padding-left: 1em;
-		}
-
-		.course{
-			font-size: 1.1em;
-
-			padding: 6em 0;
-			margin: 1em 0 4em 0;
-			position: relative;
-		}
-
-		.firstcourse{
-			font-size: 1.1em;
-			margin: 1em 0 0 0;
-			padding-top 2em;
-		}
-
-		.firstcourse a, .course a{
-			font-size: 1.6em;	
-		}
-
-		.credit{
-			font-size: .4em;
-		} 
-		
-		.credit a {
-		font-size: 1em;
-		}
-
-		.socialmedia a img{
-			margin: 1em 0; 
-			max-width: 50%;
-		}
-
-		.form textarea{
-		border: 1px solid;
-		padding: 10px;
-		box-shadow: 5px 10px #888888;
-		font-size: 1.5em;
+	.flow h1{
+		padding-left: 1em;
 
 	}
-		.form input{
-		border: 1px solid;
-		padding: 2em 4em 2em 2em ;
-		margin: 3em 0 0 3em ;
-		box-shadow: 5px 10px #888888;
-		font-size: 1em
+	.flow p{
+		font-size: 0.6em;
+		word-spacing: 0.01em;
+		padding-left: 1em;
+	}
+
+	.about{
+		font-size: 0.6em;
+		word-spacing: 0.01em;
+		padding-left: 1em;
+	}
+
+	.course{
+		font-size: 1.1em;
+
+		padding: 6em 0;
+		margin: 1em 0 4em 0;
+		position: relative;
+	}
+
+	.firstcourse{
+		font-size: 1.1em;
+		margin: 1em 0 0 0;
+		padding-top 2em;
+	}
+
+	.firstcourse a, .course a{
+		font-size: 1.6em;	
+	}
+
+	.credit{
+		font-size: .4em;
 	} 
+	
+	.credit a {
+	font-size: 1em;
+	}
+
+	.socialmedia a img{
+		margin: 1em 0; 
+		max-width: 50%;
+	}
+
+
+
+	.form textarea{
+		font-size: 1.5em;
+		border: 1px solid;
+		box-shadow: 4px 8px #888888;
+		padding: 0.1em;
+		width: 90%;
+	}
+	
+	.subject{
+		width: 50%;
+		font-size: 1em;
+		padding: 0.3em;
+		box-shadow: 4px 8px #888888;
+	}
+	
+	
+	.form{
+		font-size: 2em;
+		margin-bottom: 8%;
+	}
+	
+	
+	.submit{
+		border: 1px solid;
+		padding: 1em 3.4em 1em 1em;
+		margin: 2em 2em 2em 0;
+		box-shadow: 4px 8px #888888;
+		font-size: 1em;
+	} 
+}
