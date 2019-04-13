@@ -51,12 +51,14 @@ nav {
 	right: 1em; 
 	transform: translateY(-50%);
 }
+
+
 nav a:visited{
 	color: white;
 }
 
 nav li {
-	font-size: 2vw;
+	font-size: 1em;
 	font-family: 'Lato', 'light', 'sans-serif';
 	display: inline-block;
 	padding: 1em 1em;
@@ -89,6 +91,7 @@ a:visited {
 
 
 nav li a:hover { 
+	transition-duration: 0.75s;
 	text-decoration-line: underline;
 	text-decoration-color: rgb(4, 215, 159);
 }
@@ -149,7 +152,7 @@ add javascript/jquery to engage black nav bar at top
 	color: black;
 }
 
-.cover a:hover, .donate a:hover, .donate2 a:hover {
+.cover a:hover, .donate a:hover, .donate2 a:hover, .socialmedia a:hover {
 	opacity: .4;
 	
 }
@@ -178,7 +181,7 @@ add javascript/jquery to engage black nav bar at top
 	line-height: 1.5em;
 	width: 45em;
 	margin: auto;
-	text-align: left;
+	text-align: center;
 }
 
 .mission h2 {
@@ -248,7 +251,6 @@ div h4 {
 
 .socialmedia {
 	max-width: 15%;
-
 }
 
 .contact {
@@ -359,7 +361,7 @@ footer div{
 	font-family: 'lato', 'light', 'sans-serif';
 	margin: 0 2em 3em 0;
 	padding: 1em 1em 0 1em;
-	font-size: 0.7em;
+	font-size: 0.8em;
 }
 
 .flow{
@@ -386,7 +388,7 @@ footer div{
 	font-family: 'lato', 'light', 'sans-serif';
 	margin-right: 2em;
 	padding: 1em 1em 0 1em;
-	font-size: 0.7em;
+	font-size: 0.8em;
 }
 
 .head h1{
@@ -512,6 +514,36 @@ footer div{
 .firstcourse p {
 	line-height: 1.5em;
 }
+
+
+/* .button{
+	margin-top: 4em;
+	text-align: center;
+	margin-bottom: 4em;
+}
+
+.button a:visited{
+	color: black;
+}
+
+.book a:hover{
+	opacity: 0.4;
+}
+
+.book{
+	padding: .5em 1.8em;
+	border-radius: 9%;
+	background: rgb(4, 215, 159);
+	font-family: 'Lato', 'light', 'sans-serif';
+	font-size: 1.5em;
+	color: black;
+} */
+
+
+
+
+
+
 
 
 input[type="submit"]{
