@@ -18,6 +18,7 @@ margin: 0;padding: 0;box-sizing: border-box;
 }
 
 body {
+	background: black;
 	font-size: 2vw;
 	font-family: 'Lato', 'light', 'sans-serif';
 }
@@ -116,10 +117,7 @@ section a:hover{
 	background-color: black;
 }
 
-/* remove black background 
-remove margin from hero image
-add javascript/jquery to engage black nav bar at top
-*/
+
 
 
 .cover div{
@@ -329,10 +327,10 @@ footer div{
 
 .instructor {
 	margin-top: 10%;
+	color: white;
 }
 
 .instructor h1 {
-	padding-left: 0.7em;
 	letter-spacing: 0.06em;
 }
 
@@ -348,30 +346,38 @@ footer div{
 	letter-spacing: .06em;
 	font-family: 'lato', 'light', 'sans-serif';
 	margin: 0 auto;
-	padding: 1em 1em 1em 1em;
+	padding: 1em 1em 1em 0;
 	font-size: 0.8em;
 
 }
 
+.about { 
+	color: white;
+}
 
-.about{
+.about p{
 	max-width:100%;
 	line-height: 1.7em;
 	letter-spacing: .06em;
 	font-family: 'lato', 'light', 'sans-serif';
 	margin: 0 2em 3em 0;
-	padding: 1em 1em 0 1em;
+	padding: 1em 1em 0 0;
 	font-size: 0.8em;
 }
 
-.flow{
-	margin: 0;
-	padding: 1em 0 0 2.4em;
+
+.about p a:hover { 
+	color: rgb(4, 215, 159);
 }
 
-.flow h1{
-	padding-left: 0.3em;
+
+.flow{
+	color: white;
+	margin: 0;
+	padding: 1em 0 0 2.5em;
 }
+
+
 
 .flow p a:visited {
 	color: blue;
@@ -387,25 +393,10 @@ footer div{
 	letter-spacing: .06em;
 	font-family: 'lato', 'light', 'sans-serif';
 	margin-right: 2em;
-	padding: 1em 1em 0 1em;
+	padding: 1em 1em 0 0;
 	font-size: 0.8em;
 }
 
-.head h1{
-	padding-left: .5em;
-}
-
-.head h1 a{ 
-	text-decoration: none;
-}
-
-.head h1 a:hover {
-	color: rgb(4, 215, 159);
-}
-
-.about a:hover { 
-	color: rgb(4, 215, 159);
-}
 
 
 
@@ -422,6 +413,7 @@ footer div{
 }	
 
 .course {
+	color:white;
 	padding: 4em 0;
 	padding-left: 4em;
 	margin: 1em 0;
@@ -429,13 +421,27 @@ footer div{
 	font-size: 0.8em;
 	line-height: 1.6em;
 }
-.course a{
-	text-decoration: underline;
+
+.see {
+	padding: .2em 0.5em;
+	border-radius: 9%;
+	
+	background: rgb(4, 215, 159);
+	font-family: 'Lato', 'light', 'sans-serif';
+	color: black;
+}
+.see:visited {
+	color: black;
+}
+
+.course a.see:hover{
+	color: black;
 }
 
 .course a:hover{
 	color: rgb(4, 215, 159);
 }
+
 
 
 .course img {
@@ -444,11 +450,13 @@ footer div{
 
 .course p {
 	line-height: 1.5em;
+	color:white;
 }
 
 
 
 .classes{
+	color: white;
 	margin-top: 10%;
 }
 
@@ -468,6 +476,7 @@ footer div{
 }
 
 .email {
+	color: white;
 	text-align: center;
 	padding-bottom: 2em;
 }
@@ -512,6 +521,7 @@ footer div{
 }
 
 .firstcourse p {
+	color: white;
 	line-height: 1.5em;
 }
 
@@ -573,6 +583,7 @@ input[type="reset"]{
 
 
 .form{
+	color: white;
 	font-size: 1.5em;
 	margin-bottom: 8%;
 }
@@ -697,14 +708,9 @@ input[type="reset"]{
 	}
 
 
-	.instructor h1{
-		padding-left: 0.6em;
-	}
-
 	.instructor p{
 		margin-top: 0;
 		font-size: 0.8em;
-		word-spacing: 0.3em;
 		line-height: 1.9em;
 	}
 
@@ -717,22 +723,13 @@ input[type="reset"]{
 	}
 
 
-
-	.flow h1{
-		padding-left: 0.5em;
-
-	}
 	.flow p{
 		font-size: 0.8em;
-		word-spacing: 0.01em;
-		padding-left: 1em;
 		line-height: 1.9em;
 	}
 
-	.about{
+	.about p{
 		font-size: 0.8em;
-		word-spacing: 0.01em;
-		padding-left: 1em;
 		line-height: 1.9em;
 	}
 
@@ -753,7 +750,6 @@ input[type="reset"]{
 		font-size: 0.7em;
 		padding: 2em 0;
 	}
-
 	.course a{
 		font-size: 1.2em;	
 	}
@@ -1008,7 +1004,7 @@ input[type="reset"]{
 		padding-left: 1em;
 	}
 
-	.about{
+	.about p{
 		font-size: 0.8em;
 		word-spacing: 0.1em;
 		padding-left: 1em;
@@ -1152,13 +1148,9 @@ input[type="reset"]{
 	}
 
 
-	.instructor h1{
-		padding-left: 0.6em;
-	}
-
 	.instructor p{
 		font-size: 0.8em;
-		word-spacing: 0.3em;
+		word-spacing: 0.03em;
 		line-height: 1.6em;
 	}
 
@@ -1170,21 +1162,14 @@ input[type="reset"]{
 			width: 50%;
 	}
 
-
-	.flow h1{
-		padding-left: 0.5em;
-
-	}
 	.flow p{
 		font-size: 0.8em;
-		word-spacing: 0.01em;
-		padding-left: 1em;
+		word-spacing: 0.03em;
 	}
 
-	.about{
+	.about p{
 		font-size: 0.8em;
-		word-spacing: 0.01em;
-		padding-left: 1em;
+		word-spacing: 0.03em;
 	}
 
 
@@ -1332,10 +1317,6 @@ input[type="reset"]{
 	}
 
 
-	.instructor h1{
-		padding-left: 0.4em;
-	}
-
 	.instructor p{
 		font-size: 0.5em;
 		word-spacing: 0.1em;
@@ -1353,20 +1334,15 @@ input[type="reset"]{
 		font-size:0.7em;
 	}
 
-	.flow h1{
-		padding-left: 0.8em;
 
-	}
 	.flow p{
 		font-size: 0.5em;
 		word-spacing: 0.01em;
-		padding-left: 1em;
 	}
 
-	.about{
+	.about p{
 		font-size: 0.5em;
 		word-spacing: 0.01em;
-		padding-left: 1em;
 	}
 
 	.course{
@@ -1550,20 +1526,14 @@ input[type="reset"]{
 	}
 
 
-	.flow h1{
-		padding-left: 1em;
-
-	}
 	.flow p{
 		font-size: 0.6em;
-		word-spacing: 0.01em;
-		padding-left: 1em;
+		word-spacing: 0.03em;
 	}
 
-	.about{
+	.about p{
 		font-size: 0.6em;
-		word-spacing: 0.01em;
-		padding-left: 1em;
+		word-spacing: 0.03em;
 	}
 
 	.email {
