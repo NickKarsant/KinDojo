@@ -405,7 +405,6 @@ font-size: 0.8em;
 
 
 
-
 .course div {
 position: absolute;
 right: 0;
@@ -1268,7 +1267,7 @@ nav li a{
 }
 
 .mission p{
-	font-size: 0.5em;
+	font-size: 0.7em;
 	padding: 0;
 }
 
@@ -1432,6 +1431,23 @@ font-size: 0.6em;
 		margin-top: 1.8em;
 		max-width: 28%;
 	}
+
+	.mission p{ 
+		font-size: 1em;
+	}
+
+	.flow p{
+		font-size: 1em;
+	}
+
+	.instructor p {
+		font-size: 1em;
+	}
+
+	.about p {
+		font-size: 1em;
+	}
+
 }
 
 
@@ -1466,7 +1482,7 @@ nav li a{
 }
 
 .mission p{
-	font-size: 0.5em;
+	font-size: 0.6em;
 	padding: 0;
 }
 
