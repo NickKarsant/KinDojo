@@ -1,14 +1,6 @@
 // var lintStream = require('jslint').LintStream;
 
-const firebaseConfig = {
-  apiKey: "AIzaSyCA6gjlHyesnip_QCr9-TV9mA48sofPVDU",
-  authDomain: "reservation-site-93cb2.firebaseapp.com",
-  databaseURL: "https://reservation-site-93cb2.firebaseio.com",
-  projectId: "reservation-site-93cb2",
-  storageBucket: "reservation-site-93cb2.appspot.com",
-  messagingSenderId: "89005609281",
-  appId: "1:89005609281:web:f50957798441d793"
-};
+
 
 firebase.initializeApp(firebaseConfig);
 
