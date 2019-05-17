@@ -60,16 +60,26 @@ function validDateInput() {
     }
 }
 function validStartTimeInput() {
-  var timeInputField = document.querySelector('#starttime');
+  let timeInputField = document.querySelector('#starttime');
     // Check to see whether the user has entered a value to the time field.
     if (timeInputField.value === '') {
       // If the email field is blank, display a message to the user.
-
+			
       // Add an error class to the input field that will give it a red border.
 			timeInputField.className = 'error';
 			return false;
+		} else if (timeInputField.value < "09:00"){
+			document.getElementById('early').style.display = "inline";
+			timeInputField.className = 'error';
+	
+		// } else if (timeInputField.value > "18:00"){
+		// 	document.getElementById('late').style.display = "inline";		
+		// 	timeInputField.className = 'error';
     } else {
-      // Otherwise, clear out the error message.
+			if (timeInputField.value >= "09:00"){
+				document.getElementById('early').style.display = "none";
+			}
+			// Otherwise, clear out the error message.
       document.getElementById('starttime').innerText = '';
       // Remove the error class from the input field
 			timeInputField.className = '';
@@ -77,7 +87,7 @@ function validStartTimeInput() {
     }
 }
 function validEndTimeInput() {
-  var timeInputField = document.querySelector('#endtime');
+  let timeInputField = document.querySelector('#endtime');
     // Check to see whether the user has entered a value to the time field.
     if (timeInputField.value === '') {
       // If the email field is blank, display a message to the user.
@@ -85,8 +95,20 @@ function validEndTimeInput() {
       // Add an error class to the input field that will give it a red border.
 			timeInputField.className = 'error';
 			return false;
+
+		// } else if (timeInputField.value < "10:00"){
+		// 	timeInputField.className = 'error';
+		// 	document.getElementById('early').style.display = "inline";
+		
+		} else if (timeInputField.value > "19:00"){
+			document.getElementById('late').style.display = "inline";
+			timeInputField.className = 'error';
+
     } else {
-      // Otherwise, clear out the error message.
+			if (timeInputField.value <= "19:00"){
+				document.getElementById('late').style.display = "none";
+			}
+			// Otherwise, clear out the error message.
       document.getElementById('endtime').innerText = '';
       // Remove the error class from the input field
 			timeInputField.className = '';

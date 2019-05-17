@@ -127,7 +127,7 @@ add javascript/jquery to engage black nav bar at top
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 10% 0 10% 0;
+padding: 10% 0 0 0;
 color: white;
 width: 100%;
 }
@@ -144,19 +144,32 @@ color: white;
 width: 100%;
 }
 
-
-.cover a, .donate a {
-padding: .5em 1.8em;
-border-radius: 9%;
-
-background: rgb(4, 215, 159);
-font-family: 'Lato', 'light', 'sans-serif';
-color: black;
+button.button{
+	padding: .5em 1.8em;
+	border-radius: 9%;
+	background: rgb(4, 215, 159);
+	font-family: 'Lato', 'light', 'sans-serif';
+	color: black;
+	margin: 5% 5%;
 }
 
-.cover a:hover, .donate a:hover, .donate2 a:hover, .socialmedia a:hover {
+
+.button:hover, .donate2 a:hover, .socialmedia a:hover {
 opacity: .4;
 
+}
+
+.donate button{
+	font-size: 1.5em;
+	opactity: 0.4;
+	margin: 7% 0 0 0;
+}
+
+.cover p button{
+color: black;
+max-width: 70%;
+font-family: 'Lato', 'light', 'sans-serif';
+font-size: 1em;
 }
 
 .cover p{
@@ -169,6 +182,7 @@ word-spacing: .1em;
 line-height: 1.9em;
 font-family: 'Lato', 'light', 'sans-serif';
 font-size: 1em;
+margin: auto; 
 }
 
 .mission {
@@ -228,7 +242,7 @@ font-size: 1.5em;
 
 .donate img {
 background-color: white;
-width: 20vw;
+width: 100%;
 }
 
 li {
@@ -543,8 +557,12 @@ margin-bottom: 4em;
 color: black;
 }
 
-.book a:hover{
+.book button:hover{
 opacity: 0.4;
+}
+
+.book-upper:hover{
+	opacity: 0.4;
 }
 
 .book{
@@ -665,6 +683,11 @@ p.label {
 	background-color: rgb(233, 248, 244);
 	color: black;
 	font-size: 0.8em;
+}
+
+#early, #late {
+	display: none;
+	font-size: 0.5em;
 }
 
 .form-group{
