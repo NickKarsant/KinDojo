@@ -316,7 +316,7 @@ float: left;
 }	
 
 
-.contact:after, .header:after, .donate:after, .firstcourse:after, footer:after, .instructor:after, .course:after {
+.contact:after, .reserve-form:after, .header:after, .donate:after, .firstcourse:after, footer:after, .instructor:after, .course:after {
 clear: both;
 content: "";
 display: block;
@@ -571,12 +571,9 @@ padding: .5em 1.8em;
 border-radius: 9%;
 background: rgb(4, 215, 159);
 font-family: 'Lato', 'light', 'sans-serif';
-font-size: 1.5em;
+font-size: 1.2em;
 color: black;
 }
-
-
-
 
 
 
@@ -585,65 +582,45 @@ color: black;
 input[type="submit"]{
 width: 10%;
 background-color: rgb(4, 215, 159);
+border: 1px solid;
+padding: 1.5%;
+margin: auto;
+box-shadow: 4px 8px #888888;
+font-size: 1em;
+}
+.submit:hover{
+	opacity: 0.5;
 }
 
-input[type="reset"]{
-width: 10%;
-background-color: rgb(242, 243, 243);
-} 
+.label {
+	color: white;
+	font-size: 1.3em;
+}
 
-.form textarea{
-font-size: 0.5em;
+#inputMessage{
 border: 1px solid;
 box-shadow: 4px 8px #888888;
 padding: 0.1em;
-width: 80%;
+width: 60%;
 }
 
-.subject{
-width: 40%;
-font-size: 0.5em;
-padding: 0.3em;
-box-shadow: 4px 8px #888888;
+input, textarea{
+	font-size: 1em;
 }
-
 
 .form{
 color: white;
-font-size: 1.5em;
+font-size: 1em;
 margin-bottom: 8%;
 }
 
-
-.submit{
-border: 1px solid;
-padding: 0.2em;
-margin: 0.5em 2em 0.5em 0;
-box-shadow: 4px 8px #888888;
-font-size: 1em;
-} 
-
-.submit:hover{
-opacity: 0.5;
+.form span{
+	color: red;
+	display: none;
 }
 
-
-
-
-
-.reserveform {
-	padding-top: 12%;
-	background-color: rgb(233, 248, 244);
-	color: black;
-	font-size: 1em;
-	}
-
-
-.set-reservation{
-	padding: 2%;
-	font-size:1em;
-	margin-bottom: 5%;
-	background: rgb(4, 215, 159);
+p.label {
+	margin-bottom: 1%;
 }
 
 .error {
@@ -652,16 +629,58 @@ opacity: 0.5;
 	border-style: solid;
 }
 
-.loading {
-	display: none;
-}
-
 #required {
 	color: red;
 	font-size: 1.2em;
 	display: none;
 }
 
+#complete {
+	color: rgb(33, 197, 33);
+	font-size: 1.5em;
+	display: none;
+}
+
+
+
+
+.reserve-form:after{
+	clear: both;
+	content: "";
+	display: block;
+}
+
+#left{
+	float: left;
+	width: 40%;
+}
+
+#calendar{
+	width: 60%;
+	height: 900px;
+}
+
+.reserveform {
+	padding-top: 12%;
+	background-color: rgb(233, 248, 244);
+	color: black;
+	font-size: 0.8em;
+}
+
+.form-group{
+	margin: 0.5em 0;
+	font-size: 1.4em;
+}
+#exception{
+	font-size: 0.7em;
+}
+
+.set-reservation{
+	padding: 2%;
+	font-size:1.3em;
+	margin-bottom: 5%;
+	background: rgb(4, 215, 159);
+}
 
 
 
@@ -701,179 +720,215 @@ opacity: 0.5;
 
 @media only screen and (max-device-width: 1440px ) {
 
+	header {
+		padding: 0 2em;
+	}
 
+	header img{
+		max-width: 30%;
+	}
 
-header {
-	padding: 0 2em;
-}
+	nav li a{
+		font-size: 1em;
+	}
 
-header img{
-	max-width: 30%;
-}
+	.cover p{
+		font-size: 0.9em;
+		justify-content: center;
+		align-items: flex-start;
+	}
 
-nav li a{
-	font-size: 1em;
-}
+	.mission h2{
+		font-size: 1.4em;
+		padding: 0.5em 0;
+	}
 
-.cover p{
-	font-size: 0.9em;
-	justify-content: center;
-	align-items: flex-start;
-}
+	.mission p{
+		font-size: 0.8em;
+		padding: 0;
+		line-height: 2em;
+	}
 
-.mission h2{
-	font-size: 1.4em;
-	padding: 0.5em 0;
-}
+	.donate img{
+		width: 100%;
+	}
 
-.mission p{
-	font-size: 0.8em;
-	padding: 0;
-	line-height: 2em;
-}
+	.donate h2{
+		font-size: 2.3em;
+	}
 
-.donate img{
-	width: 100%;
-}
+	.donate p{
+		font-size: 2em;
+	}
 
-.donate h2{
-	font-size: 2.3em;
-}
+	footer h4{
+		font-size: 1em;
+	}
 
-.donate p{
-	font-size: 2em;
-}
+	div h4 {
+		color: white;
+		text-align: left;
+		letter-spacing: .1em;
+		margin: 0;
+		font-size: 1em;
+	}
 
-footer h4{
-	font-size: 1em;
-}
+	.socialmedia a img{
+		margin: 1em 1em 0 0; 
+		max-width: 30%;
+	}
 
-div h4 {
-	color: white;
-	text-align: left;
-	letter-spacing: .1em;
-	margin: 0;
-	font-size: 1em;
-}
+	.socialmedia {
+		max-width: 20%;
+	}
 
-.socialmedia a img{
-	margin: 1em 1em 0 0; 
-	max-width: 30%;
-}
+	.donate2 p{
+		line-height: 1.5em; 
+		letter-spaceing: 0;
+		word-spacing: .1em;
+		font-size: 0.7em;
+	}
 
-.socialmedia {
-	max-width: 20%;
-}
-
-.donate2 p{
-	line-height: 1.5em; 
-	letter-spaceing: 0;
-	word-spacing: .1em;
-	font-size: 0.7em;
-}
-
-.donate2 a{
-	font-size: 0.6em; 
-	padding: 1.7em 3em;
-}
+	.donate2 a{
+		font-size: 0.6em; 
+		padding: 1.7em 3em;
+	}
 
 
 
-section h1{
-	font-size: 1.6em;
-}
+	section h1{
+		font-size: 1.6em;
+	}
 
 
-.instructor p{
-	margin-top: 0;
-	font-size: 0.8em;
-	line-height: 1.9em;
-}
+	.instructor p{
+		margin-top: 0;
+		font-size: 0.8em;
+		line-height: 1.9em;
+	}
 
-.instructor div{
-	width: 100%;
-}
+	.instructor div{
+		width: 100%;
+	}
 
-.instructor img{
-		width: 50%;
-}
-
-
-.flow p{
-	font-size: 0.8em;
-	line-height: 1.9em;
-}
-
-.about p{
-	font-size: 0.8em;
-	line-height: 1.9em;
-}
-
-.course{
-	font-size: 0.7em;
-	padding: 2em 0;
-}
-
-.course img{
-	width: 30%;
-}
-
-.firstcourse img{
-	width: 30%;
-}
-
-.firstcourse{
-	font-size: 0.7em;
-	padding: 2em 0;
-}
-.course a{
-	font-size: 1.2em;	
-}
-
-.credit{
-	font-size: .4em;
-} 
-
-.credit a {
-font-size: 1.2em;
-}
+	.instructor img{
+			width: 50%;
+	}
 
 
-.form{
-	font-size: 1em;
-	margin-top: 2em;
-}
+	.flow p{
+		font-size: 0.8em;
+		line-height: 1.9em;
+	}
+
+	.about p{
+		font-size: 0.8em;
+		line-height: 1.9em;
+	}
+
+	.course{
+		font-size: 0.7em;
+		padding: 2em 0;
+	}
+
+	.course img{
+		width: 30%;
+	}
+
+	.firstcourse img{
+		width: 30%;
+	}
+
+	.firstcourse{
+		font-size: 0.7em;
+		padding: 2em 0;
+	}
+	.course a{
+		font-size: 1.2em;	
+	}
+
+	.credit{
+		font-size: .4em;
+	} 
+
+	.credit a {
+	font-size: 1.2em;
+	}
 
 
-.form textarea{
-	font-size: 1em;
-	border: 1px solid;
-	box-shadow: 4px 8px #888888;
-	padding: 0.1em;
-	width: 60%;
-}
-
-.subject{
-	width: 30%;
-	font-size: 1em;
-	padding: 0.3em;
-	box-shadow: 4px 8px #888888;
-}
+	.form{
+		font-size: 1em;
+		margin-top: 2em;
+	}
 
 
-.form{
-	font-size: 1em;
-	margin-bottom: 8%;
-}
+	.form textarea{
+		font-size: 1em;
+		border: 1px solid;
+		box-shadow: 4px 8px #888888;
+		padding: 0.1em;
+		width: 60%;
+	}
+
+	.subject{
+		width: 30%;
+		font-size: 1em;
+		padding: 0.3em;
+		box-shadow: 4px 8px #888888;
+	}
 
 
-.submit{
-	border: 1px solid;
-	padding: 0.3em;
-	margin: 2em 2em 0.5em 0;
-	box-shadow: 4px 8px #888888;
-	font-size: 1em;
-} 
+	.form{
+		font-size: 1em;
+		margin-bottom: 8%;
+	}
+
+
+	.submit{
+		border: 1px solid;
+		padding: 0.3em;
+		margin: 2em 2em 0.5em 0;
+		box-shadow: 4px 8px #888888;
+		font-size: 1em;
+	} 
+
+	.reserve-form:after{
+		clear: both;
+		content: "";
+		display: block;
+	}
+	
+	#left{
+		float: left;
+		width: 40%;
+	}
+
+	#calendar{
+		width: 60%;
+		height: 35em;
+	}
+
+	.reserveform {
+		padding-top: 12%;
+		background-color: rgb(233, 248, 244);
+		color: black;
+		font-size: 1em;
+	}
+
+	.form-group{
+		margin: 0.5em 0;
+		font-size: 1em;
+	}
+	#exception{
+		font-size: 0.7em;
+	}
+
+	.set-reservation{
+		padding: 2%;
+		font-size:1.3em;
+		margin-bottom: 5%;
+		background: rgb(4, 215, 159);
+	}
 }
 
 
@@ -884,80 +939,120 @@ font-size: 1.2em;
 
 @media only screen and (max-device-width: 1024px) {
 
-header {
-	padding-left: 1em;
+	header {
+		padding-left: 1em;
 
-}
+	}
 
-header img{
-	max-width: 30%;
-}
+	header img{
+		max-width: 30%;
+	}
 
-.mission p{
-	font-size: 0.9em;
-	padding: 0 1em 1em 1em;
-	line-height:2em;
-}
+	.mission p{
+		font-size: 0.9em;
+		padding: 0 1em 1em 1em;
+		line-height:2em;
+	}
 
-.course{
-	font-size: 0.6em;
-	padding: 2em 0;
-}
+	.course{
+		font-size: 0.6em;
+		padding: 2em 0;
+	}
 
-.course img{
-	width: 30%;
-}
+	.course img{
+		width: 30%;
+	}
 
-.firstcourse img{
-	width: 30%;
-}
+	.firstcourse img{
+		width: 30%;
+	}
 
-.firstcourse{
-	font-size: 0.6em;
-	padding: 2em 0;
-}
+	.firstcourse{
+		font-size: 0.6em;
+		padding: 2em 0;
+	}
 
-.course a{
-	font-size: 1.2em;	
-}
+	.course a{
+		font-size: 1.2em;	
+	}
 
-.credit{
-	font-size: .7em;
-} 
+	.credit{
+		font-size: .7em;
+	} 
 
-.credit a {
-font-size: 1.2em;
-}
-
-.form textarea{
-	font-size: 0.7em;
-	border: 1px solid;
-	box-shadow: 4px 8px #888888;
-	padding: 0.1em;
-	width: 60%;
-}
-
-.subject{
-	width: 30%;
-	font-size: 0.7em;
-	padding: 0.3em;
-	box-shadow: 4px 8px #888888;
-}
+	.credit a {
+	font-size: 1.2em;
+	}
 
 
-.form{
-	font-size: 1.3em;
-	margin-bottom: 8%;
-}
+	.subject{
+		width: 30%;
+		font-size: 0.7em;
+		padding: 0.3em;
+		box-shadow: 4px 8px #888888;
+	}
 
 
-.submit{
-	border: 1px solid;
-	padding: 0.5em 1.5em 0.5em 1.2em;
-	margin: 2em 3em 0.5em 0;
-	box-shadow: 4px 8px #888888;
-	font-size: 0.7em;
-} 
+	.form{
+		font-size: 1.3em;
+		margin-bottom: 8%;
+	}
+
+	#inputMessage{
+		font-size: 1em;
+		border: 1px solid;
+		box-shadow: 4px 8px #888888;
+		padding: 0.1em;
+		width: 80%;
+	}
+
+	#submit{
+		border: 1px solid;
+		padding: 2% 9% 2% 2%;
+		margin: auto;
+		box-shadow: 4px 8px #888888;
+		font-size: 1em;
+	}
+
+	.reserve-form:after{
+		clear: both;
+		content: "";
+		display: block;
+	}
+	
+	#left{
+		float: left;
+		width: 40%;
+	}
+
+	#calendar{
+		width: 60%;
+		height: 900px;
+	}
+
+	.reserveform {
+		padding-top: 12%;
+		background-color: rgb(233, 248, 244);
+		color: black;
+		font-size: 1em;
+	}
+
+	.form-group{
+		margin: 0.5em 0;
+		font-size: 1.4em;
+	}
+	#exception{
+		font-size: 0.7em;
+	}
+
+	.set-reservation{
+		padding: 2%;
+		font-size:1.3em;
+		margin-bottom: 5%;
+		background: rgb(4, 215, 159);
+	}
+
+	
 }
 
 
@@ -1143,173 +1238,208 @@ font-size: 0.7em
 
 @media only screen and (max-device-width: 768px ) {
 
-header {
-	padding: 0 2em;
-}
+	header {
+		padding: 0 2em;
+	}
 
-header img{
-	max-width: 30%;
-}
+	header img{
+		max-width: 30%;
+	}
 
-nav li a{
-	font-size: 1em;
-}
+	nav li a{
+		font-size: 1em;
+	}
 
-.cover p{
-	font-size: 0.9em;
-	justify-content: center;
-	align-items: flex-start;
-}
+	.cover p{
+		font-size: 0.9em;
+		justify-content: center;
+		align-items: flex-start;
+	}
 
-.mission h2{
-	font-size: 1.4em;
-	padding: 0.5em 0;
-}
+	.mission h2{
+		font-size: 1.4em;
+		padding: 0.5em 0;
+	}
 
-.mission p{
-	font-size: 0.8em;
-	padding: 0;
-	line-height: 1.6em;
-}
+	.mission p{
+		font-size: 0.8em;
+		padding: 0;
+		line-height: 1.6em;
+	}
 
-.donate img{
-	width: 100%;
-}
+	.donate img{
+		width: 100%;
+	}
 
-.donate h2{
-	font-size: 2.3em;
-}
+	.donate h2{
+		font-size: 2.3em;
+	}
 
-.donate p{
-	font-size: 2em;
-}
+	.donate p{
+		font-size: 2em;
+	}
 
-footer h4{
-	font-size: 1em;
-}
+	footer h4{
+		font-size: 1em;
+	}
 
-div h4 {
-	color: white;
-	text-align: left;
-	letter-spacing: .1em;
-	margin: 0;
-	font-size: 1em;
-}
+	div h4 {
+		color: white;
+		text-align: left;
+		letter-spacing: .1em;
+		margin: 0;
+		font-size: 1em;
+	}
 
-.socialmedia a img{
-	margin: 1em 1em 0 0; 
-	max-width: 30%;
-}
+	.socialmedia a img{
+		margin: 1em 1em 0 0; 
+		max-width: 30%;
+	}
 
-.socialmedia {
-	max-width: 20%;
-}
+	.socialmedia {
+		max-width: 20%;
+	}
 
-.donate2 p{
-	line-height: 1.5em; 
-	letter-spaceing: 0;
-	word-spacing: .1em;
-	font-size: 0.7em;
-}
+	.donate2 p{
+		line-height: 1.5em; 
+		letter-spaceing: 0;
+		word-spacing: .1em;
+		font-size: 0.7em;
+	}
 
-.donate2 a{
-	font-size: 0.6em; 
-	padding: 1.7em 3em;
-}
-
-
-
-section h1{
-	font-size: 1.6em;
-}
-
-
-.instructor p{
-	font-size: 0.8em;
-	word-spacing: 0.03em;
-	line-height: 1.6em;
-}
-
-.instructor div{
-	width: 100%;
-}
-
-.instructor img{
-		width: 50%;
-}
-
-.flow p{
-	font-size: 0.8em;
-	word-spacing: 0.03em;
-}
-
-.about p{
-	font-size: 0.8em;
-	word-spacing: 0.03em;
-}
-
-
-.course{
-	font-size: 0.7em;
-	padding: 2em 0;
-}
-
-.course img{
-	width: 30%;
-}
-
-.firstcourse img{
-	width: 30%;
-}
-
-.firstcourse{
-	font-size: 0.7em;
-	padding: 2em 0;
-}
-
-.course a{
-	font-size: 1.2em;	
-}
-
-.credit{
-	font-size: .4em;
-} 
-
-.credit a {
-font-size: 1.2em;
-}
+	.donate2 a{
+		font-size: 0.6em; 
+		padding: 1.7em 3em;
+	}
 
 
 
-.form textarea{
-	font-size: 1em;
-	border: 1px solid;
-	box-shadow: 4px 8px #888888;
-	padding: 0.1em;
-	width: 50%;
-}
-
-.subject{
-	width: 20%;
-	font-size: 1em;
-	padding: 0.3em;
-	box-shadow: 4px 8px #888888;
-}
+	section h1{
+		font-size: 1.6em;
+	}
 
 
-.form{
-	font-size: 1em;
-	margin-bottom: 8%;
-}
+	.instructor p{
+		font-size: 0.8em;
+		word-spacing: 0.03em;
+		line-height: 1.6em;
+	}
+
+	.instructor div{
+		width: 100%;
+	}
+
+	.instructor img{
+			width: 50%;
+	}
+
+	.flow p{
+		font-size: 0.8em;
+		word-spacing: 0.03em;
+	}
+
+	.about p{
+		font-size: 0.8em;
+		word-spacing: 0.03em;
+	}
 
 
-.submit{
-	border: 1px solid;
-	padding: 0.5em;
-	margin: 3em 3em 0.5em 0;
-	box-shadow: 4px 8px #888888;
-	font-size: 1em;
-} 
+	.course{
+		font-size: 0.7em;
+		padding: 2em 0;
+	}
+
+	.course img{
+		width: 30%;
+	}
+
+	.firstcourse img{
+		width: 30%;
+	}
+
+	.firstcourse{
+		font-size: 0.7em;
+		padding: 2em 0;
+	}
+
+	.course a{
+		font-size: 1.2em;	
+	}
+
+	.credit{
+		font-size: .4em;
+	} 
+
+	.credit a {
+	font-size: 1.2em;
+	}
+
+	.subject{
+		width: 20%;
+		font-size: 1em;
+		padding: 0.3em;
+		box-shadow: 4px 8px #888888;
+	}
+
+
+	.form{
+		font-size: 1em;
+		margin-bottom: 8%;
+	}
+
+	#inputMessage{
+		font-size: 1em;
+		border: 1px solid;
+		box-shadow: 4px 8px #888888;
+		padding: 0.1em;
+		width: 60%;
+	}
+
+	#submit{
+		border: 1px solid;
+		padding: 2% 8% 2% 2%;
+		margin: auto;
+		box-shadow: 4px 8px #888888;
+		font-size: 1em;
+	}
+
+	.reserve-form:after{
+		clear: both;
+		content: "";
+		display: block;
+	}
+	
+	#left{
+		float: left;
+		width: 40%;
+	}
+
+	#calendar{
+		width: 60%;
+		height: 900px;
+	}
+
+	.reserveform {
+		padding-top: 12%;
+		background-color: rgb(233, 248, 244);
+		color: black;
+		font-size: 1em;
+	}
+
+	.form-group{
+		margin: 0.5em 0;
+		font-size: 1.4em;
+	}
+	#exception{
+		font-size: 0.7em;
+	}
+
+	.set-reservation{
+		padding: 2%;
+		font-size:1.3em;
+		margin-bottom: 5%;
+		background: rgb(4, 215, 159);
+	}
 
 }
 
@@ -1319,178 +1449,220 @@ font-size: 1.2em;
 
 @media only screen and (max-device-width: 425px ) {
 	
-header {
-	padding: 0 2em;
-	height: 8%;
-}
+	header {
+		padding: 0 2em;
+		height: 8%;
+	}
 
-header img{
-	margin-top: 1.6em;
-	max-width: 27%;
-}
+	header img{
+		margin-top: 1em;
+		max-width: 24%;
+	}
 
-nav li a{
-	font-size: 1.5em;
-}
+	nav li a{
+		font-size: 1.5em;
+	}
 
-.cover p{
-	font-size: 0.9em;
-	justify-content: center;
-	align-items: flex-start;
-}
+	.cover p{
+		font-size: 0.9em;
+		justify-content: center;
+		align-items: flex-start;
+	}
 
-.mission h2{
-	font-size: 1.4em;
-	padding: 0.5em 0;
-}
+	.mission h2{
+		font-size: 1.4em;
+		padding: 0.5em 0;
+	}
 
-.mission p{
-	font-size: 0.7em;
-	padding: 0;
-}
+	.mission p{
+		font-size: 0.7em;
+		padding: 0;
+	}
 
-.donate img{
-	width: 100%;
-}
+	.donate img{
+		width: 100%;
+	}
 
-.donate h2{
-	font-size: 2.3em;
-}
+	.donate h2{
+		font-size: 2.3em;
+	}
 
-.donate p{
-	font-size: 2em;
-}
+	.donate p{
+		font-size: 2em;
+	}
 
-footer h4{
-	font-size: 1em;
-}
+	footer h4{
+		font-size: 1em;
+	}
 
-div h4 {
-	color: white;
-	text-align: left;
-	letter-spacing: .1em;
-	margin: 0;
-	font-size: 1em;
-}
+	div h4 {
+		color: white;
+		text-align: left;
+		letter-spacing: .1em;
+		margin: 0;
+		font-size: 1em;
+	}
 
-.donate2 p{
-	line-height: 1.5em; 
-	letter-spaceing: 0;
-	word-spacing: .1em;
-	font-size: 0.7em;
-	width: 100%;
-}
+	.donate2 p{
+		line-height: 1.5em; 
+		letter-spaceing: 0;
+		word-spacing: .1em;
+		font-size: 0.7em;
+		width: 100%;
+	}
 
-.donate2 a{
-	font-size: 0.6em; 
-	padding: 1.5em 3.8em;
-}
-
-
-
-section h1{
-	font-size: 1.6em;
-}
+	.donate2 a{
+		font-size: 0.6em; 
+		padding: 1.5em 3.8em;
+	}
 
 
-.instructor p{
-	font-size: 0.5em;
-	word-spacing: 0.1em;
-}
 
-.instructor div{
-	width: 100%;
-}
-
-.instructor img{
-	width: 50%;
-}
-
-.email{
-	font-size:0.7em;
-}
+	section h1{
+		font-size: 1.6em;
+	}
 
 
-.flow p{
-	font-size: 0.5em;
-	word-spacing: 0.01em;
-}
+	.instructor p{
+		font-size: 0.5em;
+		word-spacing: 0.1em;
+	}
 
-.about p{
-	font-size: 0.5em;
-	word-spacing: 0.01em;
-}
+	.instructor div{
+		width: 100%;
+	}
 
-.course{
-	font-size: 1em;
+	.instructor img{
+		width: 50%;
+	}
 
-	padding: 4em 0;
-	margin: 2em 0;
-	position: relative;
-}
-.course img{
-	width:33.33%;
-}
+	.email{
+		font-size:0.7em;
+	}
 
-.firstcourse{
-	font-size: 1.1em;
-	margin-top: 2em;
-	padding: 2em 0 2em 0;
-}
 
-.firstcourse img{
-	width: 33.33%;
-}
+	.flow p{
+		font-size: 0.5em;
+		word-spacing: 0.01em;
+	}
 
-.course a{
-	font-size: 1.2em;	
-}
+	.about p{
+		font-size: 0.5em;
+		word-spacing: 0.01em;
+	}
 
-.credit{
+	.course{
+		font-size: 1em;
+
+		padding: 4em 0;
+		margin: 2em 0;
+		position: relative;
+	}
+	.course img{
+		width:33.33%;
+	}
+
+	.firstcourse{
+		font-size: 1.1em;
+		margin-top: 2em;
+		padding: 2em 0 2em 0;
+	}
+
+	.firstcourse img{
+		width: 33.33%;
+	}
+
+	.course a{
+		font-size: 1.2em;	
+	}
+
+	.credit{
+		font-size: 0.6em;
+	} 
+
+	.credit a {
 	font-size: 0.6em;
-} 
-
-.credit a {
-font-size: 0.6em;
-}
-
-.socialmedia a img{
-	margin: 0.9em 0.6em; 
-	max-width: 40%;
-}
+	}
 
 
 
 
-.form textarea{
-	font-size: 1em;
-	border: 1px solid;
-	box-shadow: 4px 8px #888888;
-	padding: 0.1em;
-	width: 90%;
-}
 
-.subject{
-	width: 50%;
-	font-size: 1em;
-	padding: 0.3em;
-	box-shadow: 4px 8px #888888;
-}
+	.form textarea{
+		font-size: 1em;
+		border: 1px solid;
+		box-shadow: 4px 8px #888888;
+		padding: 0.1em;
+		width: 90%;
+	}
 
-
-.form{
-	font-size: 2em;
-	margin-bottom: 8%;
-}
+	.subject{
+		width: 50%;
+		font-size: 1em;
+		padding: 0.3em;
+		box-shadow: 4px 8px #888888;
+	}
 
 
-.submit{
-	border: 1px solid;
-	padding: 1em 3.4em 1em 1em;
-	margin: 2em 2em 2em 0;
-	box-shadow: 4px 8px #888888;
-	font-size: 1em;
-} 
+	.form{
+		font-size: 2em;
+		margin-bottom: 8%;
+	}
+
+
+	#inputMessage{
+		width: 90%;
+	}
+
+	#submit{
+		border: 1px solid;
+		padding: 3% 13% 3% 3%;
+		margin: auto;
+		box-shadow: 4px 8px #888888;
+		font-size: 1em;
+	}
+
+	.socialmedia a img{
+		margin: 1em 0 0 1em; 
+		max-width: 30%;
+	}
+	.reserve-form:after{
+		clear: both;
+		content: "";
+		display: block;
+	}
+	
+	#left{
+		float: left;
+		width: 40%;
+	}
+
+	#calendar{
+		width: 60%;
+		height: 800px;
+	}
+
+	.reserveform {
+		padding-top: 12%;
+		background-color: rgb(233, 248, 244);
+		color: black;
+		font-size: 1em;
+	}
+
+	.form-group{
+		margin: 0.5em 0;
+		font-size: 1.4em;
+	}
+	#exception{
+		font-size: 0.7em;
+	}
+
+	.set-reservation{
+		padding: 2%;
+		font-size:1.3em;
+		margin-bottom: 5%;
+		background: rgb(4, 215, 159);
+	}
 
 }
 
@@ -1506,8 +1678,8 @@ font-size: 0.6em;
 
 @media only screen and (max-device-width:375px ) {
 	header img{
-		margin-top: 1.8em;
-		max-width: 28%;
+		margin-top: 1em;
+		max-width: 26%;
 	}
 
 	.mission p{ 
@@ -1526,187 +1698,283 @@ font-size: 0.6em;
 		font-size: 1em;
 	}
 
+	#inputMessage{
+		width: 90%;
+	}
+	
+	#submit{
+		border: 1px solid;
+		padding: 3% 13% 3% 3%;
+		margin: auto;
+		box-shadow: 4px 8px #888888;
+		font-size: 1em;
+	}
+	
+	.socialmedia a img{
+		margin: 1em 0 0 1em; 
+		max-width: 30%;
+	}
+	.reserve-form:after{
+		clear: both;
+		content: "";
+		display: block;
+	}
+	
+	#left{
+		float: left;
+		width: 40%;
+	}
+
+	#calendar{
+		width: 60%;
+		height: 900px;
+	}
+
+	.reserveform {
+		padding-top: 12%;
+		background-color: rgb(233, 248, 244);
+		color: black;
+		font-size: 1em;
+	}
+
+	.form-group{
+		margin: 0.5em 0;
+		font-size: 1.4em;
+	}
+	#exception{
+		font-size: 0.7em;
+	}
+
+	.set-reservation{
+		padding: 2%;
+		font-size:1.3em;
+		margin-bottom: 5%;
+		background: rgb(4, 215, 159);
+	}
+
 }
 
 
 
 @media only screen and (max-device-width:320px ) {
-	
+
+	header {
+		padding: 0 2em;
+		height: 6%;
+	}
+
+	header img{
+		margin-top: 1em;
+		max-width: 23%;
+	}
+
+	nav li a{
+		font-size: 1.5em;
+	}
+
+	.cover p{
+		font-size: 0.9em;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.mission h2{
+		font-size: 1.4em;
+		padding: 0.5em 0;
+	}
+
+	.mission p{
+		font-size: 0.6em;
+		padding: 0;
+	}
+
+	.donate img{
+		width: 100%;
+	}
+
+	.donate h2{
+		font-size: 2.3em;
+	}
+
+	.donate p{
+		font-size: 2em;
+	}
+
+	footer h4{
+		font-size: 1em;
+	}
+
+	div h4 {
+		color: white;
+		text-align: left;
+		letter-spacing: .1em;
+		margin: 0;
+		font-size: 1em;
+	}
+
+	.donate2 p{
+		line-height: 1.5em; 
+		letter-spaceing: 0;
+		word-spacing: .1em;
+		font-size: 0.7em;
+		width: 100%;
+	}
+
+	.donate2 a{
+		font-size: 0.6em; 
+		padding: 1.5em 3.8em;
+	}
 
 
-header {
-	padding: 0 2em;
-	height: 6%;
-}
 
-header img{
-	margin-top: 1.5em;
-	max-width: 26%;
-}
+	section h1{
+		font-size: 1.6em;
+	}
 
-nav li a{
-	font-size: 1.5em;
-}
 
-.cover p{
-	font-size: 0.9em;
-	justify-content: center;
-	align-items: flex-start;
-}
 
-.mission h2{
-	font-size: 1.4em;
-	padding: 0.5em 0;
-}
+	.instructor p{
+		font-size: 0.6em;
+		word-spacing: 0.3em;
+	}
 
-.mission p{
-	font-size: 0.6em;
-	padding: 0;
-}
+	.instructor div{
+		width: 100%;
+	}
 
-.donate img{
-	width: 100%;
-}
+	.instructor img{
+			width: 50%;
+	}
 
-.donate h2{
-	font-size: 2.3em;
-}
 
-.donate p{
-	font-size: 2em;
-}
+	.flow p{
+		font-size: 0.6em;
+		word-spacing: 0.03em;
+	}
 
-footer h4{
+	.about p{
+		font-size: 0.6em;
+		word-spacing: 0.03em;
+	}
+
+	.email {
+		font-size: 0.8em;
+		padding-bottom: 1em;
+	}
+	.prereq {
+		font-size: 0.9em;
+	}
+	.course{
+		font-size: 1em;
+		padding: 4em 0;
+		margin: 2em 0;
+		position: relative;
+	}
+
+	.course img{
+		width:33.33%;
+	}
+
+	.firstcourse{
+		font-size: 1em;
+		margin-top: 2em;
+		padding-top: 1em;
+	}
+
+	.firstcourse img{
+		width: 33.33%;
+	}
+
+	.course a{
+		font-size: 1.2em;	
+	}
+
+	.credit{
+		font-size: .4em;
+	} 
+
+	.credit a {
 	font-size: 1em;
-}
+	}
 
-div h4 {
-	color: white;
-	text-align: left;
-	letter-spacing: .1em;
-	margin: 0;
-	font-size: 1em;
-}
-
-.donate2 p{
-	line-height: 1.5em; 
-	letter-spaceing: 0;
-	word-spacing: .1em;
-	font-size: 0.7em;
-	width: 100%;
-}
-
-.donate2 a{
-	font-size: 0.6em; 
-	padding: 1.5em 3.8em;
-}
+	.socialmedia a img{
+		margin: 1em 0 0 1em; 
+		max-width: 30%;
+	}
 
 
 
-section h1{
-	font-size: 1.6em;
-}
+	.form textarea{
+		font-size: 1.5em;
+		border: 1px solid;
+		box-shadow: 4px 8px #888888;
+		padding: 0.1em;
+		width: 90%;
+	}
 
-
-
-.instructor p{
-	font-size: 0.6em;
-	word-spacing: 0.3em;
-}
-
-.instructor div{
-	width: 100%;
-}
-
-.instructor img{
+	.subject{
 		width: 50%;
+		font-size: 1em;
+		padding: 0.3em;
+		box-shadow: 4px 8px #888888;
+	}
+
+.label {
+	font-size: 0.5em;
 }
+	.form{
+		font-size: 2em;
+		margin-bottom: 8%;
+	}
 
+	#inputMessage{
+		width: 90%;
+	}
 
-.flow p{
-	font-size: 0.6em;
-	word-spacing: 0.03em;
-}
+	#submit{
+		border: 1px solid;
+		padding: 3% 13% 3% 3%;
+		margin: auto;
+		box-shadow: 4px 8px #888888;
+		font-size: 1em;
+	}
 
-.about p{
-	font-size: 0.6em;
-	word-spacing: 0.03em;
-}
+	.reserve-form:after{
+		clear: both;
+		content: "";
+		display: block;
+	}
+	
+	#left{
+		float: left;
+		width: 40%;
+	}
 
-.email {
-	font-size: 0.8em;
-	padding-bottom: 1em;
-}
-.prereq {
-	font-size: 0.9em;
-}
-.course{
-	font-size: 1em;
-	padding: 4em 0;
-	margin: 2em 0;
-	position: relative;
-}
+	#calendar{
+		width: 60%;
+		height: 900px;
+	}
 
-.course img{
-	width:33.33%;
-}
+	.reserveform {
+		padding-top: 12%;
+		background-color: rgb(233, 248, 244);
+		color: black;
+		font-size: 1em;
+	}
 
-.firstcourse{
-	font-size: 1em;
-	margin-top: 2em;
-	padding-top: 1em;
-}
+	.form-group{
+		margin: 0.5em 0;
+		font-size: 1.4em;
+	}
+	#exception{
+		font-size: 0.7em;
+	}
 
-.firstcourse img{
-	width: 33.33%;
-}
+	.set-reservation{
+		padding: 2%;
+		font-size:1.3em;
+		margin-bottom: 5%;
+		background: rgb(4, 215, 159);
+	}
 
-.course a{
-	font-size: 1.2em;	
-}
-
-.credit{
-	font-size: .4em;
-} 
-
-.credit a {
-font-size: 1em;
-}
-
-.socialmedia a img{
-	margin: 1em 0; 
-	max-width: 50%;
-}
-
-
-
-.form textarea{
-	font-size: 1.5em;
-	border: 1px solid;
-	box-shadow: 4px 8px #888888;
-	padding: 0.1em;
-	width: 90%;
-}
-
-.subject{
-	width: 50%;
-	font-size: 1em;
-	padding: 0.3em;
-	box-shadow: 4px 8px #888888;
-}
-
-
-.form{
-	font-size: 2em;
-	margin-bottom: 8%;
-}
-
-
-.submit{
-	border: 1px solid;
-	padding: 1em 3.4em 1em 1em;
-	margin: 2em 2em 2em 0;
-	box-shadow: 4px 8px #888888;
-	font-size: 1em;
-} 
 }

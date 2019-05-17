@@ -1,32 +1,40 @@
-// var lintStream = require('jslint').LintStream;
 
-
+const firebaseConfig = {
+  apiKey: "AIzaSyCA6gjlHyesnip_QCr9-TV9mA48sofPVDU",
+  authDomain: "reservation-site-93cb2.firebaseapp.com",
+  databaseURL: "https://reservation-site-93cb2.firebaseio.com",
+  projectId: "reservation-site-93cb2",
+  storageBucket: "reservation-site-93cb2.appspot.com",
+  messagingSenderId: "89005609281",
+  appId: "1:89005609281:web:f50957798441d793"
+};
 
 firebase.initializeApp(firebaseConfig);
 
 var database = firebase.database();
 
 // create reservationData object which will be populated with user input
-var reservationData = {};
-
-
-
-
-
-
-
+var data = {
+	name: '',
+	email: '',
+	date: '',
+	starttime: '',
+	endtime: '',
+	lesson: '',
+	students: ''
+};
 
 
 function validEmailInput() {
 	var clientEmail = document.querySelector('#email');
     // Check to see whether the user has entered a value to the email field.
-		if (clientEmail.value === null) {
+		if (clientEmail.value === '') {
       // If the email field is blank, display a message to the user.
-      document.getElementByClassName('.reservation-email').innerText = 'Please enter a name.';
       // Add an error class to the input field that will give it a red border.
 			clientEmail.className = 'error';
 			return false;
     } else {
+
       // Otherwise, clear out the error message.
       document.getElementById('email').innerText = '';
       // Remove the error class from the input field
@@ -38,9 +46,8 @@ function validEmailInput() {
 function validDateInput() {
   var dateInputField = document.querySelector('#date');
     // Check to see whether the user has entered a value to the date field.
-    if (dateInputField.value === null) {
+    if (dateInputField.value === '') {
       // If the email field is blank, display a message to the user.
-      document.getElementByClass('.reservation-date').innerText = 'Please enter a date.';
       // Add an error class to the input field that will give it a red border.
 			dateInputField.className = 'error';
 			return false;
@@ -52,32 +59,50 @@ function validDateInput() {
 			return true;
     }
 }
-function validTimeInput() {
-  var timeInputField = document.querySelector('#time');
+function validStartTimeInput() {
+  var timeInputField = document.querySelector('#starttime');
     // Check to see whether the user has entered a value to the time field.
-    if (timeInputField.value === null) {
+    if (timeInputField.value === '') {
       // If the email field is blank, display a message to the user.
-      document.getElementByClass('.reservation-time').innerText = 'Please enter a time.';
+
       // Add an error class to the input field that will give it a red border.
 			timeInputField.className = 'error';
 			return false;
     } else {
       // Otherwise, clear out the error message.
-      document.getElementById('time').innerText = '';
+      document.getElementById('starttime').innerText = '';
       // Remove the error class from the input field
 			timeInputField.className = '';
 			return true;
     }
 }
+function validEndTimeInput() {
+  var timeInputField = document.querySelector('#endtime');
+    // Check to see whether the user has entered a value to the time field.
+    if (timeInputField.value === '') {
+      // If the email field is blank, display a message to the user.
+
+      // Add an error class to the input field that will give it a red border.
+			timeInputField.className = 'error';
+			return false;
+    } else {
+      // Otherwise, clear out the error message.
+      document.getElementById('endtime').innerText = '';
+      // Remove the error class from the input field
+			timeInputField.className = '';
+			return true;
+    }
+}
+
 function validClassInput() {
-  var classInputField = document.querySelector('#classes');
+  var classInputField = document.querySelector('#lesson');
     // Check to see whether the user has entered a value to the email field.
-    if (classInputField.value === null) {
+    if (classInputField.value === '') {
       // Add an error class to the input field that will give it a red border.
 			classInputField.className = 'error';
     } else {
       // Otherwise, clear out the error message.
-      document.getElementById('classes').innerText = '';
+      document.getElementById('lesson').innerText = '';
       // Remove the error class from the input field
 			classInputField.className = '';
 			return true;
@@ -85,39 +110,13 @@ function validClassInput() {
 }
 
 
-function showLoadingIcon() {
-  document.getElementById('loading').style.display = "block";
-}
 
-
-
-// function validNameInput() {
-// 	var clientName = document.querySelector('#name');
-//     // Check to see whether the user has entered a value to the name field.
-// 		if (clientName.value === null) {
-//       // If the email field is blank, display a message to the user.
-//       document.getElementById('name').innerText = 'Please enter a name.';
-//       // Add an error class to the input field that will give it a red border.
-			
-// 			$('input').removeClass('reservation-name');
-// 			$('input').addClass('error');
-
-// 			return false;
-//     } else {
-//       // Otherwise, clear out the error message.
-//       document.getElementById('name').innerText = '';
-//       // Remove the error class from the input field
-// 			clientName.className = '';
-// 			return true;
-//     }
-// }
 
 function validNameInput() {
 	var clientName = document.querySelector('#name');
     // Check to see whether the user has entered a value to the name field.
-		if (clientName.value === null) {
+		if (clientName.value === '') {
       // If the email field is blank, display a message to the user.
-      document.getElementById('name').innerText = 'Please enter a name.';
       // Add an error class to the input field that will give it a red border.
 			clientName.className = 'error';
 			return false;
@@ -129,117 +128,188 @@ function validNameInput() {
 			return true;
     }
 }
+function validStudentsInput() {
+	var numStudents = $("#students option:selected").val();
+    // Check to see whether the user has entered a value to the name field.
+		if (numStudents === '') {
+      // If the email field is blank, display a message to the user.
+      // Add an error class to the input field that will give it a red border.
+			$('#students').css({"border": "2px solid red"});
+			// numStudents.className = 'error';
+			return false;
+    } else {   
+			// Remove the error class from the input field
+			$('#students').css({"border": "1px solid grey"});
+			return true;
+    }
+}
+
+$(function(){
+	var select = $(".1-20");
+	for (i='';i<=5;i++){
+			select.append($('<option></option>').val(i).html(i))
+	}
+});
+
+
+
+
+function confirmSavedToDatabase(){
+	console.log("saved to database");
+	document.getElementById('complete').style.display = "block";
+
+	// create a section for reservations data in your db
+	var reservationsReference = database.ref('reservations');
+
+
+	if (reservationsReference.push(data)) {
+		setTimeout(function(){location.reload()}, 5000);
+	}
+
+}
 
 
 // when submitted, the name data should be set
 // and all data should be sent to your database
  //unsure of how to submit form
-	$('.reservation-form').on('submit', function(event) {
-		event.preventDefault();
-
-		showLoadingIcon();
-
-		//  if (validNameInput()){
-		// 	 console.log("It worked")
-		//  }
-
-		if (validNameInput()
-			&&validEmailInput()
-			&& validDateInput()
-			&& validTimeInput()
-			&& validClassInput() ) {
-			reservationData.name = $('.reservation-name').val();
-			reservationData.email = $('.reservation-email').val();
-			reservationData.date = $('.reservation-date').val();
-			reservationData.time = $('.reservation-time').val();
-			reservationData.class = $('.reservation-class').val();
-		} else {
-			document.getElementById('required').style.display = "block";
-		};
-
-		showLoadingIcon();
+ function doValidation(){
 		
-
-		// create a section for reservations data in your db
-		var reservationsReference = database.ref('reservations');
-
-		reservationsReference.push(reservationData);
-	});
+	console.log('form submitted');
+	
+	event.preventDefault();
 
 
+	if (validNameInput()
+		&& validEmailInput()
+		&& validDateInput()
+		&& validStartTimeInput()
+		&& validEndTimeInput()  
+		&& validStudentsInput()
+		&& validClassInput() ) {
+		data.name = $('#name').val();
+		data.email = $('#email').val();
+		data.date = $('#date').val();
+		data.starttime = $('#starttime').val();
+		data.endtime = $('#endtime').val();
+		data.lesson = $('#lesson').val();
+		data.students = $("#students option:selected").val();
+		console.log('all fields passed validation');
+		document.getElementById('required').style.display = "none";
+		confirmSavedToDatabase();
 
-// retrieve reservations data when page loads and when reservations are added
-function getReservations() {
-
-  // use reference to database to listen for changes in reservations data
-  database.ref('reservations').on('value', function(results) {
-
-    // Get all reservations stored in the results we received back from Firebase
-    var allReservations = results.val();
-
-    // remove all list reservations from DOM before appending list reservations
-    $('.reservations').empty();
-
-    // iterate (loop) through all reservations coming from database call
-    for (var reservation in allReservations) {
-
-      // Create an object literal with the data we'll pass to Handlebars
-      var context = {
-        name: allReservations[reservation].name,
-				day: allReservations[reservation].day,
-				date: allReservations[reservation].date,
-				time: allReservations[reservation].time,
-				class: allReservations[reservation].class,
-				
-        reservationId: reservation
-      };
-
-
-      // Get the HTML from our Handlebars reservation template
-      var source = $("#reservation-template").html();
-
-      // Compile our Handlebars template
-      var template = Handlebars.compile(source);
-
-      // Pass the data for this reservation (context) into the template
-      var reservationListItem = template(context);
-
-      // Append newly created reservation to reservations list.
-      $('.reservations').append(reservationListItem);
-
-    }
-
-  });
+	} else {
+		document.getElementById('required').style.display = "block";
+		console.log('validation error');
+	};
 
 }
 
-// When page loads, get reservations
-// getReservations();
+// SEND CONFIRMATION EMAIL WITH RESERVATION DETAILS
+// ADD RESERVATION TO FLOW ARTS DOJO CALENDAR AND MAKE VISIBLE ON BOOKING PAGE
+
+
+// var lastIndex = reservationsReference.length - 1
+// var recentRes = reservationsReference[lastIndex] 
+
+
+// var name = recentRes.name
+// var email = recentRes.email
+// var date = recentRes.date
+// var starttime =recentRes.starttime
+// var endtime = recentRes.endtime
+// var students = recentRes.students
+// var lesson = recentRes.lesson
 
 
 
 
 
 
+function validEmail() {
+	var email = document.querySelector('#inputEmail');
+    // Check to see whether the user has entered a value to the email field.
+		if (email.value === '') {
+      // If the email field is blank, display a message to the user.
+      // Add an error class to the input field that will give it a red border.
+			email.className = 'error';
+			return false;
+    } else {
+
+      // Otherwise, clear out the error message.
+      document.getElementById('inputEmail').innerText = '';
+      // Remove the error class from the input field
+			email.className = '';
+			return true;
+    }
+}
+function validName() {
+	var name = document.querySelector('#inputName');
+    // Check to see whether the user has entered a value to the name field.
+		if (name.value === '') {
+      // If the email field is blank, display a message to the user.
+      // Add an error class to the input field that will give it a red border.
+			name.className = 'error';
+			return false;
+    } else {
+      // Otherwise, clear out the error message.
+      document.getElementById('inputName').innerText = '';
+      // Remove the error class from the input field
+			name.className = '';
+			return true;
+    }
+}
+function validMessage() {
+	var message = document.querySelector('#inputMessage');
+    // Check to see whether the user has entered a value to the email field.
+		if (message.value === '') {
+      // If the email field is blank, display a message to the user.
+      // Add an error class to the input field that will give it a red border.
+			message.className = 'error';
+			return false;
+    } else {
+
+      // Otherwise, clear out the error message.
+      document.getElementById('inputMessage').innerText = '';
+      // Remove the error class from the input field
+			message.className = '';
+			return true;
+    }
+}
+
+// CONTACT FORM
 
 
-// $(window).on('scroll', function() { 
-  
-//   var coverDistance = $('.cover').offset().top;
-
-//   var distanceScrolled = $(window).scrollTop();
-  
-//   if (distanceScrolled >= coverDistance) {
-//    $('.cover').addClass('scrolled');
-//   }else {
-//      $('.cover').removeClass('scrolled');
-//   }
-// });
+function emailValidation(){
 
 
+	console.log('form submitted');
 
 
+	if (validName()
+		&& validEmail()
+		&& validMessage() ){
+			console.log('all validation passed')
+			// var mess = document.querySelector('#inputMessage').value;
+		$.ajax({
+			url: "https://formspree.io/nkarsant@gmail.com",
+			method: "POST",
+			data: $('#inputMessage').serialize,
+			dataType: "json"
+		});
+		document.getElementById('required').style.display = "none";
+		document.getElementById('complete').style.display = "block";
+		console.log("email sent");
+	} else {
+		event.preventDefault();
+		document.getElementById('required').style.display = "block";
+		console.log('email not sent');
+		console.log(array);
+	}
+
+}
 
 
-
+var object = ["http://www.googleapis.com/calendar/v3/calendars/4mlk5ojf94gnh75kuqfe80kk00@group.calendar.google.com/events?key=AIzaSyABZMCI0bkCTBNyBFoJ5-Qxvjcop_dYqYg"];
+var API_KEY = 'AIzaSyABZMCI0bkCTBNyBFoJ5-Qxvjcop_dYqYg';
+var SCOPES	= ["https://www.googleapis.com/auth/calendar.events"];
 

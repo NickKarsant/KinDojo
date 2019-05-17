@@ -11,6 +11,11 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 		<script src="js/main.js"></script>
+
+
+		<!-- https://www.googleapis.com/calendar/v3/calendars/4mlk5ojf94gnh75kuqfe80kk00@group.calendar.google.com/events?key=AIzaSyABZMCI0bkCTBNyBFoJ5-Qxvjcop_dYqYg -->
+
+		<!-- https://www.googleapis.com/calendar/v3/calendars/4mlk5ojf94gnh75kuqfe80kk00@group.calendar.google.com/events?key=AIzaSyABZMCI0bkCTBNyBFoJ5-Qxvjcop_dYqYg -->
 	</head>
 
 	<body>
@@ -33,67 +38,82 @@
 
 		<section class="reserveform">
 			<h1 align="center">Booking</h1>
-				
+				<p align="center">Classes are held at Robin Williams Meadow
+					in Golden Gate Park by default.
+				</p>
 			<form  class="reservation-form">
 				
-				<div class = "form-group">
-					<div>
-						Name: <input id="name" type="text" class="reservation-name" placeholder="Jane Doe">
+				<div id="left">
+					<div class = "form-group">
+						Name
+						<br>
+						<input id="name" type="text" class="reservation-name">
 					</div>
-				</div>
-				
-				<div class = "form-group">
-					<div>
-							Email: <input id="email" type="text" class="reservation-email" placeholder="abc@email.com">
+					
+					<div class = "form-group">
+						Email
+						<br>
+						<input id="email" type="email" class="reservation-email">
 					</div>
-				</div>
 
 
-				<div class = "form-group">
-					<div>
-						Date: <input id="date" type="text" class="reservation-date" placeholder="08/12/19">
+					<div class = "form-group">
+						Date
+						<br>
+						<input id="date" type="date" class="reservation-date">
 					</div>
-				</div>
 
-				<div class = "form-group">
-					<div>
-						Time: <input id="time" type="text" class="reservation-time" placeholder="3:30pm">
+					<div class = "form-group">
+						Start Time 
+						<br>
+						<input id="starttime" type="time" class="reservation-time">
 					</div>
-				</div>
 
-				<div class="form-group">
-						<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23e9f8f4&amp;ctz=America%2FLos_Angeles&amp;src=NG1sazVvamY5NGduaDc1a3VxZmU4MGtrMDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23F09300&amp;color=%237CB342&amp;showTitle=0&amp;showPrint=0&amp;showDate=1&amp;showCalendars=0&amp;showNav=1" 
-						style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-				</div>
+					<div class = "form-group">
+						End Time
+						<br>
+						<input id="endtime" type="time" class="reservation-time">
+					</div>
+					
+					<div class = "form-group">
+						# of Students: <select id="students" class="1-20"></select>
+					</div>
 
-				<label>Choose a class:
-						<input list="classes" class="reservation-class" />
-				</label>
-					<datalist id="classes">
-						<option value="Body Fundatmentals">
-						<option value="Poi">
-						<option value="Rope Dart">
-						<option value="Dragon Staff">
-						<option value="Contact Staff">
-						<option value="Bullwhip">
-						<option value="Nunchucks">
-						<option value="Intro to Fire Spinning">
-						<option value="Puppyhammer">
-					</datalist>
+					<div class="form-group">
+						<label>Choose a class
+							<br>
+							<input id="lesson" type="text" list="classes" class="reservation-lesson" />
+						</label>
+						<datalist id="classes">
+							<option value="Body Fundamentals">
+							<option value="Poi">
+							<option value="Rope Dart">
+							<option value="Dragon Staff">
+							<option value="Contact Staff">
+							<option value="Bullwhip">
+							<option value="Nunchucks">
+							<option value="Puppyhammer">
+						</datalist>
+						<p id="exception">To book the Intro to Fire-Spinning class, please contact the instructor</p>
+					</div>
+
+					<span id="required">All fields required</span>
+					<span id="complete">Confirmation Email Sent.</span>
 
 					<br>
-					<br>
-					<span id="required">Please enter all required information</span>
-				
-				<button class="btn btn-default set-reservation">Book Class</button>
-				<!-- <input type="button" onclick="submitForm()" value="Book Class" class="btn btn-default set-reservation"></input> -->
+					<button class="btn btn-default set-reservation" type="submit" value="submit">Book Class</button>
+				</div>
+
+				<div id="right">
+						<iframe id="calendar" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23e9f8f4&amp;ctz=America%2FLos_Angeles&amp;src=NG1sazVvamY5NGduaDc1a3VxZmU4MGtrMDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%2333B679&amp;color=%23616161&amp;showTz=1&amp;showCalendars=0&amp;showPrint=0&amp;showDate=1&amp;showNav=1&amp;showTitle=0" 
+						style="border-width:0" frameborder="0" scrolling="no"></iframe>				
+				</div>
+
+
 
 			</form>
 	
 		</section>
-
-		<span id="loading">LOADING...</span>
-
 
 		<footer>
 
@@ -110,7 +130,7 @@
 	
 				<link>
 					<a href="https://www.instagram.com/greenhermes1/?hl=en" target="_blank"> <img src="images/Social Media Icons/iconfinder_2018_social_media_popular_app_logo_instagram_3225191.png" alt="instagram logo"></a>
-	
+
 					<a href="https://www.facebook.com/fadflowartsdojo" target="_blank"> <img src="images/Social Media Icons/iconfinder_2018_social_media_popular_app_logo_facebook_3225194.png" alt="facebook logo"> </a>
 	
 				</link>
@@ -120,7 +140,7 @@
 
 			<div class="donate2">
 				<h4>Donate to the Flow Arts</h4>
-				<p>Help support a students' learning by donating to the Flow-Arts Dojo. 
+				<p>Help support a student's learning by donating to the Flow-Arts Dojo. 
 					Your donation will be used to purchase practice props of varying sizes to allow people of all ages to participate.</p>
 				<br>
 				<a href="https://www.patreon.com/bePatron?u=19117719">Become a Patron</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
@@ -130,6 +150,12 @@
 		
 
 		</footer>
+		<script>
+	$('.reservation-form').on('submit', function(event) {
+		event.preventDefault();
+		doValidation();
+	});
+	</script>
 
 
 	</body>
