@@ -27,6 +27,7 @@ header img{
 margin-top:0.8em;
 max-width: 25%;
 margin-right: 100%;
+margin-left:3%;
 }
 
 header {
@@ -667,6 +668,49 @@ p.label {
 	color: black;
 	font-size: 0.8em;
 }
+
+/* .reserve-form:after{
+	clear: both;
+	content: "";
+	display: block;
+}
+
+#left{
+	float: left;
+	width: 40%;
+}
+
+#calendar{
+	width: 60%;
+	height: 900px;
+}
+
+.reserveform {
+	padding-top: 12%;
+	background-color: rgb(233, 248, 244);
+	color: black;
+	font-size: 0.8em;
+}
+
+#early, #late {
+	display: none;
+	font-size: 0.5em;
+}
+
+.form-group{
+	margin: 0.5em 0;
+	font-size: 1.4em;
+}
+#exception{
+	font-size: 0.7em;
+}
+
+.set-reservation{
+	padding: 2%;
+	font-size:1.3em;
+	margin-bottom: 5%;
+	background: rgb(4, 215, 159);
+} */
 
 #embedded{
 	margin-bottom: -5%;
