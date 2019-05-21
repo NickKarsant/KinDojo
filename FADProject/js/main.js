@@ -297,13 +297,14 @@ function priceTimesStudents(){
 
 	if ($('#lesson').val() === "Body fundamentals"){
 		price = 35;
+	// }else if ($('#lesson').val() === "Intro to FIre-Spinning"){ 
+	// 	price = 150;
 	} else {
 		price = 40;
 	}
-	console.log(price);
 
 	total = price * $("#students option:selected").val();
-	console.log(total);
+
 	return total;
 };
 
