@@ -173,9 +173,6 @@ function validStartTimeInput() {
 			startTimeInput.className = 'error';
 			document.getElementById('apptime').style.display = "block";
 	
-		// } else if (startTimeInput.value > "18:00"){
-		// 	document.getElementById('late').style.display = "inline";		
-		// 	startTimeInput.className = 'error';
     } else {
 			if (startTimeInput.value >= "09:00"){
 				document.getElementById('early').style.display = "none";
@@ -201,6 +198,7 @@ function validEndTimeInput() {
 		} else if (endTimeInput.value < document.querySelector('#starttime').value){
 			// endTimeInput.className = 'error';
 			document.getElementById('apptime').style.display = "block";
+
 		
 		} else if (endTimeInput.value > "19:00"){
 			document.getElementById('late').style.display = "inline";
@@ -288,9 +286,26 @@ var data = {
 	endtime: '',
 	students: '',
 	lesson: '',
-	location: ''
+	location: '',
+	total: 0
 };
 
+
+function priceTimesStudents(){
+	var price = 0
+	var total = 0
+
+	if ($('#lesson').val() === "Body fundamentals"){
+		price = 35;
+	} else {
+		price = 40;
+	}
+	console.log(price);
+
+	total = price * $("#students option:selected").val();
+	console.log(total);
+	return total;
+};
 
 
 // when submitted, the name data should be set
@@ -318,8 +333,10 @@ var data = {
 		data.lesson = $('#lesson').val();
 		data.students = $("#students option:selected").val();
 		data.location = $("#pac-input").val();
+		data.total = priceTimesStudents();
 		console.log('all fields passed validation');
-		document.getElementById('required').style.display = "none";			document.getElementById('apptime').style.display = "block";
+		document.getElementById('required').style.display = "none";		
+		document.getElementById('apptime').style.display = "block";
 		document.getElementById('apptime').style.display = "none";
 		confirmSavedToDatabase();
 
@@ -335,9 +352,6 @@ function confirmSavedToDatabase(){
 
 	// create a section for reservations data in your db
 	var reservationsReference = database.ref('reservations');
-
-	
-
 
 	if (reservationsReference.push(data)) {
 
@@ -355,6 +369,7 @@ function confirmSavedToDatabase(){
 // var students = data.students;
 // var lesson = data.lesson;
 // var location = data.location;
+// var total = data.total;
 
 
 

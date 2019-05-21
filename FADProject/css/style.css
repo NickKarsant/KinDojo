@@ -701,6 +701,7 @@ input#bookclass{
 	font-size: 1.4em;
 }
 #exception{
+	width: 80%;
 	font-size: 0.7em;
 }
 
@@ -722,7 +723,6 @@ input#bookclass{
 #map {
 	width: 115%;
 	height: 500px;
-	paddight: 10em;
 }
 
 /* Optional: Makes the sample page fill the window. */
@@ -736,6 +736,11 @@ html, body {
   font-size: 15px;
   font-weight: 300;
 }
+
+.gm-style-mtc{
+	display: none;
+}
+
 
 #infowindow-content .title {
   font-weight: bold;
@@ -778,12 +783,11 @@ html, body {
 
 #pac-input {
   background-color: #fff;
-  font-family: Roboto;
-  font-size: 15px;
+	font-size: 2em;
   font-weight: 300;
   padding: 0 11px 0 5px;
   text-overflow: ellipsis;
-  width: 300px;
+  width: 80%;
 }
 
 #pac-input:focus {
