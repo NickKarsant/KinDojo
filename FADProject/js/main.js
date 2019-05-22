@@ -85,7 +85,7 @@ function emailValidation(){
 			console.log('all validation passed')
 			// var mess = document.querySelector('#inputMessage').value;
 		$.ajax({
-			url: "https://formspree.io/nkarsant@gmail.com",
+			url: "https://formspree.io/flowartsdojo@gmail.com",
 			method: "POST",
 			data: $('#inputMessage').serialize,
 			dataType: "json"
@@ -326,6 +326,20 @@ function priceTimesStudents(){
 		&& validStudentsInput()
 		&& validClassInput() 
 		&& validLocationInput() ) {
+			$.ajax({
+				url: "https://formspree.io/flowartsdojo@gmail.com",
+				method: "POST",
+				data: $('#inputMessage').serialize,
+				dataType: "json",
+				html: $('#confirmation').html()
+			});
+			
+			$.ajax({
+				url: "https://formspree.io/" + data.email,
+				method: "POST",
+				data: $('#confirmation').html(),
+				dataType: "html"
+			});
 		data.name = $('#name').val();
 		data.email = $('#email').val();
 		data.date = $('#date').val();
@@ -340,6 +354,8 @@ function priceTimesStudents(){
 		document.getElementById('apptime').style.display = "block";
 		document.getElementById('apptime').style.display = "none";
 		confirmSavedToDatabase();
+
+
 
 	} else {
 		document.getElementById('required').style.display = "block";

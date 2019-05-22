@@ -83,7 +83,7 @@ function emailValidation(){
 			console.log('all validation passed')
 			// var mess = document.querySelector('#inputMessage').value;
 		$.ajax({
-			url: "https://formspree.io/nkarsant@gmail.com",
+			url: "https://formspree.io/flowartsdojo@gmail.com",
 			method: "POST",
 			data: $('#inputMessage').serialize,
 			dataType: "json"
