@@ -1,0 +1,1128 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Lato:300,400|Marck+Script');
+
+
+/* <meta name="viewport" content="width=device-width, initial - scale=1"> */
+
+/* * {border: 1px solid red;} */
+
+* {
+margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.homepage {
+background: black;
+font-family: 'Lato', 'light', 'sans-serif';
+}
+
+body {
+background: #212121;
+font-family: 'Lato', 'light', 'sans-serif';
+}
+
+header img{
+max-width: 45%;
+margin-right: 110%;
+}
+
+header {
+display: flex; 
+justify-content: space-between; 
+text-align: center;
+position: fixed;
+background: black;
+top: 0;
+right: 0;
+left: 50%;
+transform: translateX(-50%);
+z-index: 1;
+max-width: 100%;
+width: 100%;
+}
+
+
+nav {
+text-align: center; 
+position: absolute;
+top: 50%;
+right: 1em; 
+transform: translateY(-50%);
+}
+
+
+nav a:visited{
+color: white;
+}
+
+nav li {
+font-size: 1em;
+font-family: 'Lato', 'light', 'sans-serif';
+display: inline-block;
+padding: 1em 1em;
+}
+
+nav li a{
+	font-size: 2em;
+}
+
+a:link {
+text-decoration: none;
+}
+
+a:visited {
+color: blue;
+}
+
+.donate2 a:visited{
+color: black;
+}
+
+
+.nun {
+border: 2px solid black;
+}
+
+
+nav a { 
+color: white;
+font-family: 'Lato', 'light', 'sans-serif';
+}
+
+
+nav li a:hover { 
+transition-duration: 0.75s;
+text-decoration-line: underline;
+text-decoration-color: rgb(4, 215, 159);
+}
+
+nav li a.current {
+text-decoration-line: underline;
+text-decoration-color: rgb(4, 215, 159);
+}
+
+
+
+section {
+padding: 5%;
+}
+
+section a:hover{
+opacity: 0.6;
+}
+
+
+.cover {
+background-color: black;
+}
+
+
+.cover div{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10% 0 0 0;
+color: white;
+width: 100%;
+}
+
+
+.cover{
+padding: 25% 0 5% 0;
+margin-top: 10%;
+background-image: url("https://www.flamingfun.com/wp-content/uploads/2015/03/exitonearmvolt.jpeg");
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: center;
+color: white;
+width: 100%;
+}
+
+button.button{
+	padding: .5em 1.8em;
+	border-radius: 9%;
+	background: rgb(4, 215, 159);
+	font-family: 'Lato', 'light', 'sans-serif';
+	color: black;
+	margin: 5% 5%;
+}
+
+
+.button:hover, .donate2 a:hover, .hpsocialmedia a:hover {
+opacity: .4;
+
+}
+
+
+.cover p button{
+color: black;
+max-width: 70%;
+font-family: 'Lato', 'light', 'sans-serif';
+font-size: 1em;
+}
+
+.cover p{
+align-items: center;
+text-align: center;
+color: white;
+max-width: 70%;
+letter-spacing: .1em;
+word-spacing: .1em;
+line-height: 1.9em;
+font-family: 'Lato', 'light', 'sans-serif';
+font-size: 1em;
+margin: auto; 
+}
+
+.mission {
+background-color: rgb(233, 248, 244);
+color: black;
+font-size: 2vw;
+margin-bottom: 4em;
+}
+
+.mission p{
+align-items: center;
+padding: 0 5em;
+line-height: 1.5em;
+width: 90%;
+margin: auto;
+text-align: center;
+}
+
+.mission h2 {
+align-items: center;
+padding-bottom: 1.7em;
+text-decoration: rgb(4, 215, 159);
+text-decoration-line: underline;
+text-decoration-style: solid; 
+letter-spacing: 1.3px;
+font-size: 1.5em;
+}
+
+
+
+/* use percentages for div objects in sections, use vw for sections */
+
+
+li {
+list-style-type: none;
+}
+
+
+
+div h4 {
+color: white;
+text-align: left;
+letter-spacing: .1em;
+margin: 0;
+font-size: 1em;
+
+}
+
+.hpsocialmedia a img{
+margin: 1em 1em 0 0; 
+max-width: 30%;
+}
+
+.hpsocialmedia {
+max-width: 15%;
+}
+
+.hpcontact {
+margin-left: 15%;
+}
+
+
+div p{
+color: black;
+letter-spacing: .07em;
+}
+
+.hpcontact li {
+font-size: 1em;
+
+padding-top: 1.3em;
+}
+
+.hpcontact li a:hover{
+color: rgb(4, 215, 159);
+}
+
+
+.donate2 p {
+color: white;
+text-align: left;
+padding-top: 1em;
+line-height: 1.4em; 
+letter-spaceing: .1em;
+word-spacing: .1em;
+font-size: 0.7em;
+}
+
+.donate2 a {
+padding: .5em 2em;
+border-radius: 9%;
+width: 200px;
+height: 150px; 
+background: rgb(4, 215, 159);
+font-family: 'lato','light', 'sans-serif';
+font-size: 0.8em;
+color: black;
+}
+
+footer {
+display: flex;
+justify-content: space-between;
+background-color: black;
+padding-top: 2%;
+padding-bottom: 5%;
+color: white;
+clear: both;
+position: absolute;
+margin-top: -40px;
+}
+
+footer div{
+max-width: 33%;
+float: left; 
+}	
+
+
+.about:after, .hpcontact:after, .reserve-form:after, .header:after, .donate:after, .firstcourse:after, footer:after, .instructor:after, .course:after {
+clear: both;
+content: "";
+display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-device-width: 1440px ) {
+
+	
+	header {
+		padding: 0;
+	}
+
+	header img{
+		max-width: 45%;
+	}
+	
+	nav li a{
+		font-size: 1.5em;
+	}
+
+	.cover p{
+		font-size: 1.3em;
+	}
+
+
+	.mission p{
+		font-size: 1em;
+		padding: 0 1em 1em 1em;
+		line-height:2em;
+	}
+
+
+	footer {
+		max-width: 100%;
+	}
+
+	footer div{
+		width: 33%;
+	}
+
+	.hpcontact {
+		margin-left: 3%;
+	}
+
+	.hpcontact li{
+		font-size: 1.5em;
+	}
+
+	div h4{
+		font-size: 2em;
+	}
+
+	.hpsocialmedia h4{
+		font-size: 2em;
+	}
+
+	.hpsocialmedia a img{
+		/* margin: 0.5em 1em; */
+		max-width: 40%;
+	}
+
+	.hpdonate2 p{
+		font-size: 1.5em;
+		color: white;
+		padding-top: 0.4em;
+		padding-bottom: 2em;
+	}
+
+	.hpdonate2 a {
+		margin-top: 2em;
+		padding: 0.7em 2em;
+		border-radius: 9%;
+		width: 200px;
+		height: 150px; 
+		background: rgb(4, 215, 159);
+		font-family: 'lato','light', 'sans-serif';
+		font-size: 1em;
+		color: black;
+	}
+
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-device-width: 1024px) {
+
+	header {
+		padding: 0;
+	}
+
+	header img{
+		max-width: 45%;
+	}
+	
+	nav li a{
+		font-size: 1.5em;
+	}
+
+	.cover p{
+		font-size: 1.3em;
+	}
+
+
+	.mission p{
+		font-size: 1em;
+		padding: 0 1em 1em 1em;
+		line-height:2em;
+	}
+
+
+	footer {
+		max-width: 100%;
+	}
+
+	footer div{
+		width: 33%;
+	}
+
+	.hpcontact {
+		margin-left: 3%;
+		font-size: 1em;
+	}
+
+	.hpcontact li{
+		font-size: 1em;
+	}
+
+	div h4{
+		font-size: 1.7em;
+	}
+
+	.hpsocialmedia h4{
+		font-size: 1.7em;
+	}
+
+	.hpsocialmedia a img{
+		/* margin: 0.5em 1em; */
+		max-width: 30%;
+	}
+
+	.hpdonate2 p{
+		font-size: 1em;
+		color: white;
+		padding-top: 0.4em;
+		padding-bottom: 2em;
+	}
+
+	.hpdonate2 a {
+		margin-top: 2em;
+		padding: 0.7em 2em;
+		border-radius: 9%;
+		width: 200px;
+		height: 150px; 
+		background: rgb(4, 215, 159);
+		font-family: 'lato','light', 'sans-serif';
+		font-size: 1em;
+		color: black;
+	}
+
+	
+}
+
+
+
+
+
+
+
+
+/* 
+@media only screen and (max-device-width: 800px ) {
+
+
+header {
+	padding: 0 2em;
+	height: 9%;
+}
+
+header img{
+	max-width: 20%;
+}
+
+nav li a{
+	font-size: 1em;
+}
+
+.cover p{
+	font-size: 0.9em;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.mission h2{
+	font-size: 1.4em;
+	padding: 0.5em 0;
+}
+
+.mission p{
+	font-size: 0.8em;
+	padding: 0;
+}
+
+.donate img{
+	width: 100%;
+}
+
+.donate h2{
+	font-size: 2.3em;
+}
+
+.donate p{
+	font-size: 2em;
+}
+
+footer h4{
+	font-size: 1em;
+}
+
+div h4 {
+	color: white;
+	text-align: left;
+	letter-spacing: .1em;
+	margin: 0;
+	font-size: 1em;
+}
+
+.hpsocialmedia a img{
+	margin: 1em 1em 0 0; 
+	max-width: 30%;
+}
+
+.hpsocialmedia {
+	max-width: 20%;
+}
+
+.donate2 p{
+	line-height: 1.5em; 
+	letter-spaceing: 0;
+	word-spacing: .1em;
+	font-size: 0.7em;
+}
+
+.donate2 a{
+	font-size: 0.6em; 
+	padding: 1.7em 3em;
+}
+
+
+
+section h1{
+	font-size: 1.6em;
+}
+
+
+.instructor h1{
+	padding-left: 0.6em;
+}
+
+.instructor p{
+	font-size: 0.8em;
+	word-spacing: 0.1em;
+}
+
+.instructor div{
+	width: 100%;
+}
+
+.instructor img{
+		width: 50%;
+}
+
+
+.flow h1{
+	padding-left: 0.5em;
+
+}
+.flow p{
+	font-size: 0.8em;
+	word-spacing: 0.1em;
+	padding-left: 1em;
+}
+
+.about p{
+	font-size: 0.8em;
+	word-spacing: 0.1em;
+	padding-left: 1em;
+}
+
+.course{
+	font-size: 1.1em;
+
+	padding: 6em 0;
+	margin: 1em 0 4em 0;
+	position: relative;
+}
+
+.firstcourse{
+	font-size: 1.1em;
+	margin: 1em 0 0 0;
+	padding-top 2em;
+}
+
+.firstcourse a, .course a{
+	font-size: 1.2em;	
+}
+
+.credit{
+	font-size: .4em;
+} 
+
+.credit a {
+font-size: 1.2em;
+}
+
+
+
+textarea{
+border: 1px solid;
+box-shadow: 5px 10px #888888;
+font-size: 0.7em;
+padding: 0.1em;
+}
+
+.form input{
+border: 1px solid;
+padding: 0.5em;
+margin: 0.5em;
+box-shadow: 5px 10px #888888;
+font-size: 0.7em
+}
+
+.form{
+	margin-top: 1.5em;
+	font-size: 1.5em;
+}
+
+} */
+
+
+
+
+
+
+@media only screen and (max-device-width: 768px ) {
+
+	header{
+		height: 16%;
+		width: 100%;
+	}
+
+	header div img{
+		margin-top: 0.6em;
+		max-width: 39.5%
+	}
+
+	.cover p {
+		font-size: 1em;
+		padding: 0 1em;
+	}
+	.cover{
+		margin: inherit 10px;
+	}
+
+	nav li{
+		padding: 0 0.7em;
+	}
+	
+
+	nav li a{
+		font-size: 1.5em;
+	}
+
+	header div{
+		margin-left: -1.7em;
+	}
+/* 
+	.cover p{
+		font-size: 0.7em;
+		justify-content: center;
+		align-items: flex-start;
+		max-width: 100%;
+	} */
+
+	.cover button{
+		margin-top: 3em;
+		display: inline;
+	}
+
+	.mission {
+		padding-bottom: 5em;
+	}
+
+	.mission h2{
+		font-size: 2em;
+		padding: 0.5em 0;
+	}
+
+	.mission p{
+		max-width: 85%;
+		font-size: 1.5em;
+		padding: 0.5em;
+	}
+
+	footer {
+		max-width: 100%;
+	}
+
+	footer div{
+		width: 33%;
+	}
+
+	.hpcontact {
+		margin-left: 3%;
+		font-size: 1em;
+	}
+
+	.hpcontact li{
+		font-size: 1em;
+	}
+
+	div h4{
+		font-size: 1.7em;
+	}
+
+	.hpsocialmedia h4{
+		font-size: 1.7em;
+	}
+
+	.hpsocialmedia a img{
+		margin: 0.5em 1em;
+		max-width: 40%;
+	}
+
+	.hpdonate2 p{
+		font-size: 1em;
+		color: white;
+		padding-top: 0.4em;
+		padding-bottom: 2em;
+	}
+
+	.hpdonate2 a {
+		margin-top: 2em;
+		padding: 0.7em 2em;
+		border-radius: 9%;
+		width: 200px;
+		height: 150px; 
+		background: rgb(4, 215, 159);
+		font-family: 'lato','light', 'sans-serif';
+		font-size: 1em;
+		color: black;
+	}
+
+}
+
+
+
+
+
+@media only screen and (max-device-width: 425px ) {
+
+
+	header{
+		height: 10%;
+		width: 100%;
+	}
+
+	header div img{
+		margin-top: 0.6em;
+		margin-left: 0.5em;
+		max-width: 35%
+	}
+
+	.cover{
+		margin: inherit 10px;
+	}
+
+	nav li{
+		padding: 0 0.7em;
+	}
+	
+
+	nav li a{
+		font-size: 0.7em;
+	}
+
+	header div{
+		margin-left: -1.7em;
+	}
+
+	.cover p{
+		font-size: 0.7em;
+		justify-content: center;
+		align-items: flex-start;
+		max-width: 100%;
+	}
+
+	.cover button{
+		margin-top: 3em;
+		display: inline;
+	}
+
+	.mission {
+		padding-bottom: 5em;
+	}
+
+	.mission h2{
+		font-size: 2em;
+		padding: 0.5em 0;
+	}
+
+	.mission p{
+		max-width: 85%;
+		font-size: 1.5em;
+		padding: 0.5em;
+	}
+
+	footer {
+		max-width: 100%;
+	}
+
+	footer div{
+		width: 33%;
+	}
+
+	.hpcontact {
+		margin-left: 3%;
+		font-size: 1em;
+	}
+
+	.hpcontact li{
+		font-size: 0.5em;
+	}
+
+	div h4{
+		font-size: 1em;
+	}
+
+	.hpsocialmedia h4{
+		font-size: 1em;
+	}
+
+	.hpsocialmedia a img{
+		margin: 0.5em 1em;
+		max-width: 40%;
+	}
+
+	.hpdonate2 p{
+		font-size: 0.2em;
+		color: white;
+		padding-top: 0.4em;
+		padding-bottom: 1em;
+	}
+
+	.hpdonate2 a {
+		padding: .5em 2em;
+		border-radius: 9%;
+		width: 200px;
+		height: 150px; 
+		background: rgb(4, 215, 159);
+		font-family: 'lato','light', 'sans-serif';
+		font-size: 0.8em;
+		color: black;
+		}
+
+	.hpdonate2 a{
+		font-size: 0.2em; 
+		padding: 1em 1em;
+	} 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-device-width:375px ) {
+
+	header{
+		height: 9%;
+		width: 100%;
+	}
+
+	header div img{
+		margin-top: 0.6em;
+		margin-left: 0.5em;
+		max-width: 35%
+	}
+
+	.cover p {
+		font-size: 1em;
+		padding: 0 1em;
+	}
+	.cover{
+		margin: inherit 10px;
+	}
+
+	nav li{
+		padding: 0 0.7em;
+	}
+	
+
+	nav li a{
+		font-size: 0.7em;
+	}
+
+	header div{
+		margin-left: -1.7em;
+	}
+
+	.cover p{
+		font-size: 0.7em;
+		justify-content: center;
+		align-items: flex-start;
+		max-width: 100%;
+	}
+
+	.cover button{
+		margin-top: 3em;
+		display: inline;
+	}
+
+	.mission {
+		padding-bottom: 5em;
+	}
+
+	.mission h2{
+		font-size: 2em;
+		padding: 0.5em 0;
+	}
+
+	.mission p{
+		max-width: 85%;
+		font-size: 1.5em;
+		padding: 0.5em;
+	}
+
+	footer {
+		max-width: 100%;
+	}
+
+	footer div{
+		width: 33%;
+	}
+
+	.hpcontact {
+		margin-left: 3%;
+		font-size: 1em;
+	}
+
+	.hpcontact li{
+		font-size: 0.5em;
+	}
+
+	div h4{
+		font-size: 1em;
+	}
+
+	.hpsocialmedia h4{
+		font-size: 1em;
+	}
+
+	.hpsocialmedia a img{
+		margin: 0.5em 1em;
+		max-width: 40%;
+	}
+
+	.hpdonate2 p{
+		font-size: 0.2em;
+		color: white;
+		padding-top: 0.4em;
+		padding-bottom: 1em;
+	}
+
+	.hpdonate2 a {
+		padding: .5em 2em;
+		border-radius: 9%;
+		width: 200px;
+		height: 150px; 
+		background: rgb(4, 215, 159);
+		font-family: 'lato','light', 'sans-serif';
+		font-size: 0.8em;
+		color: black;
+		}
+
+	.hpdonate2 a{
+		font-size: 0.2em; 
+		padding: 1em 1em;
+	} 
+
+}
+
+
+
+@media only screen and (max-device-width:320px ) {
+
+
+
+
+
+	/* * {border: 1px solid red;} */
+
+	header{
+		height: 7%;
+	}
+
+	header div img{
+		margin-top: 0.5em;
+		margin-left: 0.6em;
+		max-width: 35%
+	}
+
+	.cover p {
+		font-size: 0.4em;
+		justify-content: center;
+		align-items: flex-start;
+		max-width: 80%;
+	}
+	.cover{
+		margin: inherit 10px;
+	}
+
+	nav li{
+		padding: 0 5px;
+	}
+	
+
+	nav li a{
+		font-size: 0.4em;
+	}
+
+	header div{
+		margin-left: -1.7em;
+	}
+
+	.cover button{
+		margin-top: 3em;
+		display: inline;
+	}
+
+	.mission {
+		padding-bottom: 5em;
+	}
+
+	.mission h2{
+		font-size: 2em;
+		padding: 0.5em 0;
+	}
+
+	.mission p{
+		max-width: 300px;
+		font-size: 1.5em;
+		padding: 0.5em;
+	}
+
+	footer {
+		max-width: 100%;
+	}
+
+	footer div{
+		width: 33%;
+	}
+
+	.hpcontact {
+		margin-left: 3%;
+		font-size: 0.3em;;
+	}
+
+	.hpcontact li{
+		font-size: 0.3em;
+	}
+
+	div h4{
+		font-size: 0.5em;
+	}
+
+	.hpsocialmedia h4{
+		font-size: 0.5em;
+	}
+
+	.hpsocialmedia a img{
+		margin: 0.5em 1em;
+		max-width: 40%;
+	}
+
+	.hpdonate2 p{
+		font-size: 0.2em;
+		color: white;
+		padding-top: 0.4em;
+		padding-bottom: 1em;
+	}
+
+	.hpdonate2 a {
+		padding: 1em 1em;
+		border-radius: 9%;
+		width: 200px;
+		height: 150px; 
+		background: rgb(4, 215, 159);
+		font-family: 'lato','light', 'sans-serif';
+		font-size: 0.2em;
+		color: black;
+		}
+
+
+
+}

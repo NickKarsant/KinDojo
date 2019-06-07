@@ -11,7 +11,6 @@
 margin: 0;padding: 0;box-sizing: border-box;
 }
 
-
 .homepage {
 background: black;
 font-family: 'Lato', 'light', 'sans-serif';
@@ -19,13 +18,12 @@ font-family: 'Lato', 'light', 'sans-serif';
 
 body {
 background: #212121;
-font-size: 2vw;
 font-family: 'Lato', 'light', 'sans-serif';
 }
 
 header img{
-max-width: 47%;
-margin-right: 100%;
+max-width: 45%;
+margin-right: 110%;
 }
 
 header {
@@ -116,11 +114,6 @@ opacity: 0.6;
 background-color: black;
 }
 
-/* remove black background 
-remove margin from hero image
-add javascript/jquery to engage black nav bar at top
-*/
-
 
 .cover div{
 display: flex;
@@ -188,13 +181,14 @@ margin: auto;
 background-color: rgb(233, 248, 244);
 color: black;
 font-size: 2vw;
+margin-bottom: 4em;
 }
 
 .mission p{
 align-items: center;
 padding: 0 5em;
 line-height: 1.5em;
-width: 45em;
+width: 90%;
 margin: auto;
 text-align: center;
 }
@@ -203,7 +197,7 @@ text-align: center;
 align-items: center;
 padding-bottom: 1.7em;
 text-decoration: rgb(4, 215, 159);
-text-decoration-line: overline;
+text-decoration-line: underline;
 text-decoration-style: solid; 
 letter-spacing: 1.3px;
 font-size: 1.5em;
@@ -268,8 +262,9 @@ max-width: 30%;
 max-width: 15%;
 }
 
+
 .contact {
-margin-left: 12%;
+margin-left: 15%;
 }
 
 
@@ -279,7 +274,7 @@ letter-spacing: .07em;
 }
 
 .contact li {
-font-size: 1.4vw;
+font-size: 1em;
 
 padding-top: 1.3em;
 }
@@ -289,7 +284,7 @@ color: rgb(4, 215, 159);
 }
 
 
-div.donate2 p {
+.donate2 p {
 color: white;
 text-align: left;
 padding-top: 1em;
@@ -299,7 +294,7 @@ word-spacing: .1em;
 font-size: 0.7em;
 }
 
-div.donate2 a {
+.donate2 a {
 padding: .5em 2em;
 border-radius: 9%;
 width: 200px;
@@ -320,7 +315,6 @@ color: white;
 clear: both;
 position: absolute;
 margin-top: -40px;
-
 }
 
 footer div{
@@ -329,7 +323,7 @@ float: left;
 }	
 
 
-.contact:after, .reserve-form:after, .header:after, .donate:after, .firstcourse:after, footer:after, .instructor:after, .course:after {
+.about:after, .contact:after, .reserve-form:after, .header:after, .donate:after, .firstcourse:after, footer:after, .instructor:after, .course:after {
 clear: both;
 content: "";
 display: block;
@@ -700,81 +694,63 @@ p.label {
 
 @media only screen and (max-device-width: 1440px ) {
 
+/* * {border: 1px solid red;} */
+
 	header {
-		padding: 0 2em;
+		height: 12vw;
 	}
 
 	header img{
-		max-width: 30%;
+		margin-top: 1.2em;
+		max-width: 24vw;
 	}
 
 	nav li a{
-		font-size: 1em;
+		font-size: 3vw;
+		margin: 0 0.5em;
 	}
 
-	.cover p{
-		font-size: 0.9em;
-		justify-content: center;
-		align-items: flex-start;
+	.contact{
+		margin-left: 3%;
 	}
 
-	.mission h2{
-		font-size: 1.4em;
-		padding: 0.5em 0;
+	.contact h4{
+		font-size: 3vw;
+	}
+	.contact li{
+		font-size: 2vw;
 	}
 
-	.mission p{
-		font-size: 0.8em;
-		padding: 0;
-		line-height: 2em;
+	.socialmedia{
+		font-size: 3vw;
 	}
 
-	.donate img{
-		width: 100%;
-	}
-
-	.donate h2{
-		font-size: 2.3em;
-	}
-
-	.donate p{
-		font-size: 2em;
-	}
-
-	footer h4{
-		font-size: 1em;
-	}
-
-	div h4 {
-		color: white;
-		text-align: left;
-		letter-spacing: .1em;
-		margin: 0;
-		font-size: 1em;
+	.donate2 h4{
+		font-size: 3vw;
 	}
 
 	.socialmedia a img{
-		margin: 1em 1em 0 0; 
-		max-width: 30%;
-	}
-
-	.socialmedia {
-		max-width: 20%;
+		margin: 0.5em 1em;
+		max-width: 40%;
 	}
 
 	.donate2 p{
-		line-height: 1.5em; 
-		letter-spaceing: 0;
-		word-spacing: .1em;
-		font-size: 0.7em;
+		font-size: 2vw;
+		color: white;
+		padding-top: 0.6em;
+		padding-bottom: 1.5em;
 	}
 
-	.donate2 a{
-		font-size: 0.6em; 
-		padding: 1.7em 3em;
-	}
-
-
+	.donate2 a {
+		padding: 1em 1em;
+		border-radius: 9%;
+		width: 200px;
+		height: 150px; 
+		background: rgb(4, 215, 159);
+		font-family: 'lato','light', 'sans-serif';
+		font-size: 1.5vw;
+		color: black;
+		}
 
 	section h1{
 		font-size: 1.6em;
@@ -783,7 +759,7 @@ p.label {
 
 	.instructor p{
 		margin-top: 0;
-		font-size: 0.8em;
+		font-size: 2vw;
 		line-height: 1.9em;
 	}
 
@@ -797,18 +773,19 @@ p.label {
 
 
 	.flow p{
-		font-size: 0.8em;
+		font-size: 2vw;
 		line-height: 1.9em;
 	}
 
 	.about p{
-		font-size: 0.8em;
+		font-size: 2vw;
 		line-height: 1.9em;
 	}
 
 	.course{
-		font-size: 0.7em;
-		padding: 2em 0;
+		font-size: 1.5vw;
+
+		padding: 4em 0;
 	}
 
 	.course img{
@@ -820,11 +797,12 @@ p.label {
 	}
 
 	.firstcourse{
-		font-size: 0.7em;
+		font-size: 1.5vw;
+
 		padding: 2em 0;
 	}
 	.course a{
-		font-size: 1.2em;	
+		font-size: 1.5vw;
 	}
 
 	.credit{
@@ -919,14 +897,126 @@ p.label {
 
 @media only screen and (max-device-width: 1024px) {
 
-	header {
-		padding-left: 1em;
 
+	/* * {border: 1px solid red;} */
+
+	header {
+		height:15%;
 	}
+
+	header img{
+		margin-top:0.5em;
+		max-width: 40%	}
+
+	nav li a{
+		font-size:2em;
+		margin: 0 0.5em;
+	}
+
+	.contact{
+		margin-left: 3%;
+	}
+
+	.contact h4{
+		font-size: 2em;
+	}
+	.contact li{
+		font-size: 1.5em;
+	}
+
+	.socialmedia{
+		font-size: 2em;
+	}
+
+	.donate2 h4{
+		font-size: 2em;
+	}
+
+	.socialmedia a img{
+		margin: 1em 1em;
+		max-width: 30%;
+	}
+
+	.donate2 p{
+		font-size: 1.5em;
+		color: white;
+		padding-top: 0.6em;
+		padding-bottom: 1.5em;
+	}
+
+	.donate2 a {
+		padding: 1em 1em;
+		border-radius: 9%;
+		width: 200px;
+		height: 150px; 
+		background: rgb(4, 215, 159);
+		font-family: 'lato','light', 'sans-serif';
+		font-size: 1.2em;
+		color: black;
+		}
+
 
 	header img{
 		max-width: 30%;
 	}
+
+	nav li a{
+		font-size: 1.5em;
+	}
+
+	.contact{
+		margin-left: 3%;
+	}
+
+	.contact h4{
+		font-size: 1.5em;
+	}
+	.contact li{
+		font-size: 1em;
+	}
+
+	.socialmedia{
+		font-size: 1.5em;
+	}
+
+
+
+	.donate2 h4{
+		font-size: 1.5em;
+	}
+
+	.socialmedia a img{
+		max-width: 25%;
+	}
+
+	.donate2 p{
+		font-size: 1em;
+		color: white;
+		padding-top: 0.6em;
+		padding-bottom: 1.5em;
+	}
+
+	.donate2 a {
+		padding: 1em 1em;
+		border-radius: 9%;
+		width: 200px;
+		height: 150px; 
+		background: rgb(4, 215, 159);
+		font-family: 'lato','light', 'sans-serif';
+		font-size: 1.2em;
+		color: black;
+		}
+
+
+
+
+
+
+
+
+
+
+
 
 	.mission p{
 		font-size: 0.9em;
@@ -935,8 +1025,9 @@ p.label {
 	}
 
 	.course{
-		font-size: 0.6em;
-		padding: 2em 0;
+		font-size: 1.2em;
+		padding: 4em 0;
+		margin: 2em 0;
 	}
 
 	.course img{
@@ -948,8 +1039,9 @@ p.label {
 	}
 
 	.firstcourse{
-		font-size: 0.6em;
+		font-size: 1.2em;
 		padding: 2em 0;
+		margin: 2em 0;
 	}
 
 	.course a{
@@ -1219,79 +1311,60 @@ font-size: 0.7em
 @media only screen and (max-device-width: 768px ) {
 
 	header {
-		padding: 0 2em;
+		height:17%;
 	}
 
 	header img{
-		max-width: 30%;
+		margin-top:0.5em;
+		max-width: 40%;
 	}
 
 	nav li a{
-		font-size: 1em;
+		font-size:1.5em;
+		margin: 0 0.5em;
 	}
 
-	.cover p{
-		font-size: 0.9em;
-		justify-content: center;
-		align-items: flex-start;
+	.contact{
+		margin-left: 3%;
 	}
 
-	.mission h2{
-		font-size: 1.4em;
-		padding: 0.5em 0;
+	.contact h4{
+		font-size: 2em;
+	}
+	.contact li{
+		font-size: 1.5em;
 	}
 
-	.mission p{
-		font-size: 0.8em;
-		padding: 0;
-		line-height: 1.6em;
-	}
-
-	.donate img{
-		width: 100%;
-	}
-
-	.donate h2{
-		font-size: 2.3em;
-	}
-
-	.donate p{
+	.socialmedia{
 		font-size: 2em;
 	}
 
-	footer h4{
-		font-size: 1em;
-	}
-
-	div h4 {
-		color: white;
-		text-align: left;
-		letter-spacing: .1em;
-		margin: 0;
-		font-size: 1em;
+	.donate2 h4{
+		font-size: 2em;
 	}
 
 	.socialmedia a img{
-		margin: 1em 1em 0 0; 
+		margin: 1em 1em;
 		max-width: 30%;
 	}
 
-	.socialmedia {
-		max-width: 20%;
-	}
-
 	.donate2 p{
-		line-height: 1.5em; 
-		letter-spaceing: 0;
-		word-spacing: .1em;
-		font-size: 0.7em;
+		font-size: 1.5em;
+		color: white;
+		padding-top: 0.6em;
+		padding-bottom: 1.5em;
 	}
 
-	.donate2 a{
-		font-size: 0.6em; 
-		padding: 1.7em 3em;
-	}
-
+	.donate2 a {
+		padding: 1em 1em;
+		border-radius: 9%;
+		width: 200px;
+		height: 150px; 
+		background: rgb(4, 215, 159);
+		font-family: 'lato','light', 'sans-serif';
+		font-size: 1.2em;
+		color: black;
+		}
 
 
 	section h1{
@@ -1325,8 +1398,8 @@ font-size: 0.7em
 
 
 	.course{
-		font-size: 0.7em;
-		padding: 2em 0;
+		font-size: 1em;
+		padding: 3em 0;
 	}
 
 	.course img{
@@ -1338,8 +1411,8 @@ font-size: 0.7em
 	}
 
 	.firstcourse{
-		font-size: 0.7em;
-		padding: 2em 0;
+		font-size: 1em;
+		padding: 3em 0;
 	}
 
 	.course a{
@@ -1430,72 +1503,60 @@ font-size: 0.7em
 @media only screen and (max-device-width: 425px ) {
 	
 	header {
-		padding: 0 2em;
-		height: 8%;
+		height:10%;
 	}
 
 	header img{
-		margin-top: 1em;
-		max-width: 24%;
+		margin-top:0.5em;
+		max-width: 45%;
 	}
 
 	nav li a{
 		font-size: 1.5em;
+		margin: 0 0.5em;
 	}
 
-	.cover p{
-		font-size: 0.9em;
-		justify-content: center;
-		align-items: flex-start;
+	.contact{
+		margin-left: 3%;
 	}
 
-	.mission h2{
-		font-size: 1.4em;
-		padding: 0.5em 0;
+	.contact h4{
+		font-size: 2em;
+	}
+	.contact li{
+		font-size: 1.5em;
 	}
 
-	.mission p{
-		font-size: 0.7em;
-		padding: 0;
-	}
-
-	.donate img{
-		width: 100%;
-	}
-
-	.donate h2{
-		font-size: 2.3em;
-	}
-
-	.donate p{
+	.socialmedia{
 		font-size: 2em;
 	}
 
-	footer h4{
-		font-size: 1em;
+	.donate2 h4{
+		font-size: 2em;
 	}
 
-	div h4 {
-		color: white;
-		text-align: left;
-		letter-spacing: .1em;
-		margin: 0;
-		font-size: 1em;
+	.socialmedia a img{
+		margin: 1em 1em;
+		max-width: 40%;
 	}
 
 	.donate2 p{
-		line-height: 1.5em; 
-		letter-spaceing: 0;
-		word-spacing: .1em;
-		font-size: 0.7em;
-		width: 100%;
+		font-size: 1.5em;
+		color: white;
+		padding-top: 0.6em;
+		padding-bottom: 1.5em;
 	}
 
-	.donate2 a{
-		font-size: 0.6em; 
-		padding: 1.5em 3.8em;
-	}
-
+	.donate2 a {
+		padding: 1em 1em;
+		border-radius: 9%;
+		width: 200px;
+		height: 150px; 
+		background: rgb(4, 215, 159);
+		font-family: 'lato','light', 'sans-serif';
+		font-size: 1.5em;
+		color: black;
+		}
 
 
 	section h1{
@@ -1504,7 +1565,7 @@ font-size: 0.7em
 
 
 	.instructor p{
-		font-size: 0.5em;
+		font-size: 0.7em;
 		word-spacing: 0.1em;
 	}
 
@@ -1522,20 +1583,20 @@ font-size: 0.7em
 
 
 	.flow p{
-		font-size: 0.5em;
+		font-size: 0.7em;
 		word-spacing: 0.01em;
 	}
 
 	.about p{
-		font-size: 0.5em;
+		font-size: 0.7em;
 		word-spacing: 0.01em;
 	}
 
 	.course{
-		font-size: 1em;
+		font-size: 1.3em;
 
-		padding: 4em 0;
-		margin: 2em 0;
+		padding: 5em 0;
+		margin: 3em 0;
 		position: relative;
 	}
 	.course img{
@@ -1543,7 +1604,7 @@ font-size: 0.7em
 	}
 
 	.firstcourse{
-		font-size: 1.1em;
+		font-size: 1.3em;
 		margin-top: 2em;
 		padding: 2em 0 2em 0;
 	}
@@ -1602,10 +1663,6 @@ font-size: 0.7em
 		font-size: 1em;
 	}
 
-	.socialmedia a img{
-		margin: 1em 0 0 1em; 
-		max-width: 30%;
-	}
 	.reserve-form:after{
 		clear: both;
 		content: "";
@@ -1657,19 +1714,77 @@ font-size: 0.7em
 
 
 @media only screen and (max-device-width:375px ) {
-	header img{
-		margin-top: 1em;
-		max-width: 26%;
+
+
+
+	header {
+		height:9%;
 	}
 
-	.mission p{ 
-		font-size: 1em;
+	header img{
+		margin-top:1em;
+		max-width: 43%;
 	}
+
+	nav li a{
+		font-size:2em;
+		margin: 0 0.5em;
+	}
+
+	.contact{
+		margin-left: 3%;
+	}
+
+	.contact h4{
+		font-size: 2em;
+	}
+	.contact li{
+		font-size: 1.5em;
+	}
+
+	.socialmedia{
+		font-size: 2em;
+	}
+
+	.donate2 h4{
+		font-size: 2em;
+	}
+
+	.socialmedia a img{
+		margin: 1em 1em;
+		max-width: 40%;
+	}
+
+	.donate2 p{
+		font-size: 1.5em;
+		color: white;
+		padding-top: 0.6em;
+		padding-bottom: 1.5em;
+	}
+
+	.donate2 a {
+		padding: 1em 1em;
+		border-radius: 9%;
+		width: 200px;
+		height: 150px; 
+		background: rgb(4, 215, 159);
+		font-family: 'lato','light', 'sans-serif';
+		font-size: 1.5em;
+		color: black;
+		}
+
 
 	.flow p{
 		font-size: 1em;
 	}
 
+	.donate div{
+		font-size: 1.4em
+	}
+	
+	h1{
+		margin-top: 2em;
+	}
 	.instructor p {
 		font-size: 1em;
 	}
@@ -1677,6 +1792,7 @@ font-size: 0.7em
 	.about p {
 		font-size: 1em;
 	}
+	
 
 	#inputMessage{
 		width: 90%;
@@ -1690,10 +1806,6 @@ font-size: 0.7em
 		font-size: 1em;
 	}
 	
-	.socialmedia a img{
-		margin: 1em 0 0 1em; 
-		max-width: 30%;
-	}
 	.reserve-form:after{
 		clear: both;
 		content: "";
@@ -1738,79 +1850,70 @@ font-size: 0.7em
 
 @media only screen and (max-device-width:320px ) {
 
+
+	/* * {border: 1px solid red;} */
+
 	header {
-		padding: 0 2em;
-		height: 6%;
+		height: 8%;
 	}
 
 	header img{
-		margin-top: 1em;
-		max-width: 23%;
+		margin-top:1.2em;
+		max-width: 40%;
 	}
 
 	nav li a{
+		font-size:2em;
+		margin: 0 0.5em;
+	}
+
+	.contact{
+		margin-left: 3%;
+	}
+
+	.contact h4{
+		font-size: 2em;
+	}
+	.contact li{
 		font-size: 1.5em;
 	}
 
-	.cover p{
-		font-size: 0.9em;
-		justify-content: center;
-		align-items: flex-start;
-	}
-
-	.mission h2{
-		font-size: 1.4em;
-		padding: 0.5em 0;
-	}
-
-	.mission p{
-		font-size: 0.6em;
-		padding: 0;
-	}
-
-	.donate img{
-		width: 100%;
-	}
-
-	.donate h2{
-		font-size: 2.3em;
-	}
-
-	.donate p{
+	.socialmedia{
 		font-size: 2em;
 	}
 
-	footer h4{
-		font-size: 1em;
+	.donate2 h4{
+		font-size: 2em;
 	}
 
-	div h4 {
-		color: white;
-		text-align: left;
-		letter-spacing: .1em;
-		margin: 0;
-		font-size: 1em;
+	.socialmedia a img{
+		margin: 0.5em 1em;
+		max-width: 40%;
 	}
 
 	.donate2 p{
-		line-height: 1.5em; 
-		letter-spaceing: 0;
-		word-spacing: .1em;
-		font-size: 0.7em;
-		width: 100%;
+		font-size: 1.5em;
+		color: white;
+		padding-top: 0.6em;
+		padding-bottom: 1.5em;
 	}
 
-	.donate2 a{
-		font-size: 0.6em; 
-		padding: 1.5em 3.8em;
-	}
+	.donate2 a {
+		padding: 1em 1em;
+		border-radius: 9%;
+		width: 200px;
+		height: 150px; 
+		background: rgb(4, 215, 159);
+		font-family: 'lato','light', 'sans-serif';
+		font-size: 1.5em;
+		color: black;
+		}
 
 
 
 	section h1{
 		font-size: 1.6em;
 	}
-
 
 
 	.instructor p{
@@ -1845,9 +1948,9 @@ font-size: 0.7em
 		font-size: 0.9em;
 	}
 	.course{
-		font-size: 1em;
-		padding: 4em 0;
-		margin: 2em 0;
+		font-size: 1.3em;
+		padding: 5em 0;
+		margin: 3em 0;
 		position: relative;
 	}
 
@@ -1856,7 +1959,7 @@ font-size: 0.7em
 	}
 
 	.firstcourse{
-		font-size: 1em;
+		font-size: 1.3em;
 		margin-top: 2em;
 		padding-top: 1em;
 	}
@@ -1877,10 +1980,7 @@ font-size: 0.7em
 	font-size: 1em;
 	}
 
-	.socialmedia a img{
-		margin: 1em 0 0 1em; 
-		max-width: 30%;
-	}
+ 
 
 
 
@@ -1899,9 +1999,9 @@ font-size: 0.7em
 		box-shadow: 4px 8px #888888;
 	}
 
-.label {
-	font-size: 0.5em;
-}
+	.label {
+		font-size: 0.5em;
+	}
 	.form{
 		font-size: 2em;
 		margin-bottom: 8%;

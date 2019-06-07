@@ -3,12 +3,14 @@
 
 	<head> 
 		<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>KinD&omacr;j&omacr;: FireBender Academy</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Find your Flow! As a dancer, a warrior or even a clown,
 		KinDojo flow arts has a style for everyone to become a fire-bender.">
-		<meta name="keywords" content="flow arts, flow, dojo, kinetic dojo, fire, fire spinning, fire dancing, fire bender, fire bending,
-		martial arts, kindojo flow arts, weapon flow, fire flow, fire flow arts, firebender academy">
+		<meta name="keywords" content="flow arts, kindojo flow, kindojo, flow, dojo, kinetic dojo, fire, fire spinning, fire dancing, fire bender, fire bending,
+		martial arts, kindojo flow arts, flowarts, weapon flow, fire flow, fire flow arts, firebender academy">
 	</head>
 
 	<!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -17,7 +19,7 @@
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-
+	
 		gtag('config', 'GA_MEASUREMENT_ID');
 	</script>
 
@@ -26,13 +28,28 @@
 		<header>
 			<div>
 					<img src="logos/logowithflame.jpg" alt="kindojo logo">
-				</div>
-			<nav>
+			</div>
+			<nav id="" class="dormant">
 				<li> <a class= "current" href="index.html">D&omacr;j&omacr;</a></li>
 				<li> <a href="classes.html">Classes</a></li>
 				<li> <a href = "aboutus.html">About</a></li>
 				<li> <a href = "contact.html">Contact</a></li>
 			</nav>
+
+				<!-- <div class="topnav">
+				<a href="index.html" class="active"><img src="logos/logowithflame.jpg" alt="kindojo logo"></a>
+				
+				<div id="myLinks">
+					<a href="classes.html">Classes</a>
+					<a href = "aboutus.html">About</a>
+					<a href = "contact.html">Contact</a>
+				</div>
+			
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>  -->
+			
 
 		</header>
 		
@@ -77,44 +94,28 @@
 			</p>
 
 		</section>
-
-
-
-		<section class="donate">
-			
-
-			<div>
-				<h2>Donate to the Flow Arts</h2>
-				<p>Help support a students' learning by donating to KinD&omacr;j&omacr;. 
-					Your donation will be used to purchase practice props of varying sizes to allow people of all ages to participate.
-				<br>
-				</p>
-				<button class="button" type="button" onclick="window.location.href='https://www.patreon.com/flowartsdojo'" value="donate">DONATE</button>
-
-			</div>
-
-			<div>
-				<img src="images/longexposure copy.png" class="img-circle" alt="long exposure fire spinning">
-			</div>
-
-		</section>
 	
 
 		
 
 		<footer>
-
-
 	
-			<div class="contact">
+	
+			<div class="hpcontact">
 				<h4>Contact</h4>
 				<li>Phone: 415-713-1130</li>
 				<li>Email: <a href="mailto:kindojoflowarts@gmail.com?subject=Booking">kindojoflowarts@gmail.com</a></li>
+				<br>
+				<br>
+				<br>
+				<span id="siteseal">
+					<script id="seal" async type="text/javascript" src="https://seal.starfieldtech.com/getSeal?sealID=3Y041Pup2BQtr4Sx58zrezDUjOSMoHjad1MTpMHNLPsbCUS5WpKG3u7erIwZ"></script>
+				</span>
 			</div>
-		
+
 
 	
-			<div class="socialmedia">
+			<div class="hpsocialmedia">
 				<h4>Follow</h4>
 				<link>
 					<a href="https://www.instagram.com/kindojo_flowarts/?hl=en" target="_blank"> <img src="images/Social Media Icons/iconfinder_2018_social_media_popular_app_logo_instagram_3225191.png" alt="instagram logo"></a>
@@ -126,20 +127,34 @@
 		
 	
 
-			<div class="donate2">
+			<div class="hpdonate2">
 				<h4>Donate to the Flow Arts</h4>
-				<p>Help support a student's learning by donating to KinD&omacr;j&omacr;. 
-					Your donation will be used to purchase practice props of varying sizes to allow people of all ages to participate.</p>
-				<br>
+				<p> Your donation will be used to purchase practice props of varying sizes 
+					to allow people of all ages to participate.</p>
 				<a href="https://www.patreon.com/bePatron?u=19117719" target="_blank">Become a Patron</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 
 				<!-- <a href="https://www.patreon.com/flowartsdojo">DONATE</a> -->
 			</div>
+
+
+
+
 		
 
 	
 		 
 		</footer>
+
+		<script>
+			function myFunction() {
+				var x = document.getElementById("myLinks");
+				if (x.style.display === "block") {
+					x.style.display = "none";
+				} else {
+					x.style.display = "block";
+				}
+			}
+			</script>
 	
 	</body>
 
