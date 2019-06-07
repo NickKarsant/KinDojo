@@ -121,7 +121,7 @@ background-color: black;
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 10% 0 0 0;
+padding: 0 0 0 0;
 color: white;
 width: 100%;
 }
@@ -136,6 +136,8 @@ background-size: 100%;
 background-position: center;
 color: white;
 width: 100%;
+padding: 20% 0;
+margin: 5em 0;
 }
 
 button.button{
@@ -326,11 +328,14 @@ display: block;
 	}
 	
 	nav li a{
-		font-size: 1.5em;
+		font-size: 2vw;
+	}
+
+	.cover{
 	}
 
 	.cover p{
-		font-size: 1.3em;
+		font-size: 2vw;
 	}
 
 
@@ -414,7 +419,11 @@ display: block;
 	}
 
 	.cover p{
-		font-size: 1.3em;
+		font-size: 1em;
+	}
+
+	.cover{
+		padding: 25% 0;
 	}
 
 
@@ -675,7 +684,8 @@ font-size: 0.7em
 		padding: 0 1em;
 	}
 	.cover{
-		margin: inherit 10px;
+		padding: 20% 0;
+		margin-bottom: 2em;
 	}
 
 	nav li{
@@ -811,6 +821,11 @@ font-size: 0.7em
 		max-width: 100%;
 	}
 
+	.cover{
+		padding: 15% 0;
+		margin-bottom: 2em;
+	}
+
 	.cover button{
 		margin-top: 3em;
 		display: inline;
@@ -862,7 +877,7 @@ font-size: 0.7em
 	}
 
 	.hpdonate2 p{
-		font-size: 0.2em;
+		font-size: 0.5em;
 		color: white;
 		padding-top: 0.4em;
 		padding-bottom: 1em;
@@ -875,7 +890,7 @@ font-size: 0.7em
 		height: 150px; 
 		background: rgb(4, 215, 159);
 		font-family: 'lato','light', 'sans-serif';
-		font-size: 0.8em;
+		font-size: 1em;
 		color: black;
 		}
 
@@ -935,6 +950,10 @@ font-size: 0.7em
 		justify-content: center;
 		align-items: flex-start;
 		max-width: 100%;
+	}
+	.cover{
+		padding: 10% 0;
+		margin-bottom: 3em;
 	}
 
 	.cover button{
@@ -1039,7 +1058,8 @@ font-size: 0.7em
 		max-width: 80%;
 	}
 	.cover{
-		margin: inherit 10px;
+		padding: 10% 0;
+		margin: 3em 0;
 	}
 
 	nav li{
