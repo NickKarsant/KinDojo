@@ -359,27 +359,36 @@ display: block;
 	}
 
 	.hpcontact li{
-		font-size: 1.5em;
+		font-size: 1em;
 	}
 
 	div h4{
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 
 	.hpsocialmedia h4{
-		font-size: 2em;
+		font-size: 1.5em;
+	}
+
+	.hpsocialmedia{
+		font-size: 1em;
+		margin: 0 8em 0 2em;
 	}
 
 	.hpsocialmedia a img{
 		/* margin: 0.5em 1em; */
-		max-width: 40%;
+		max-width: 30%;
 	}
 
 	.hpdonate2 p{
-		font-size: 1.5em;
+		font-size: 1em;
 		color: white;
 		padding-top: 0.4em;
 		padding-bottom: 2em;
+	}
+
+	.hpdonate2{
+		width: 25%;
 	}
 
 	.hpdonate2 a {
@@ -393,6 +402,57 @@ display: block;
 		font-size: 1em;
 		color: black;
 	}
+
+
+
+
+
+	/* .contact{
+		margin-left: 5%;
+	}
+
+	.contact h4{
+		font-size: 2vw;
+	}
+	.contact li{
+		font-size: 1vw;
+	}
+
+	.socialmedia{
+		font-size: 2vw;
+		margin:0 8em;
+	}
+
+	.donate2{
+		width: 22%;
+	}
+
+	.donate2 h4{
+		font-size: 2vw;
+
+	}
+
+	.socialmedia a img{
+		/* margin: 0.5em 1em; */
+		/* max-width: 25%;
+	}
+
+	.donate2 p{
+		font-size: 1vw;
+		color: white;
+		padding-top: 0.6em;
+	}
+
+	.donate2 a {
+		padding: 1em 1em;
+		border-radius: 9%;
+		width: 200px;
+		height: 150px; 
+		background: rgb(4, 215, 159);
+		font-family: 'lato','light', 'sans-serif';
+		font-size: 1vw;
+		color: black;
+		} */ 
 
 
 
@@ -920,8 +980,8 @@ font-size: 0.7em
 
 	header div img{
 		margin-top: 0.6em;
-		margin-left: 0.5em;
-		max-width: 35%
+		margin-left: 0.6em;
+		max-width: 35%;
 	}
 
 	.cover p {
@@ -986,7 +1046,7 @@ font-size: 0.7em
 
 	.hpcontact {
 		margin-left: 3%;
-		font-size: 1em;
+		font-size: 0.8em;
 	}
 
 	.hpcontact li{
@@ -994,9 +1054,15 @@ font-size: 0.7em
 	}
 
 	div h4{
-		font-size: 1em;
+		font-size: 0.8em;
 	}
 
+/* * {border: 1px solid red;} */
+
+	.hpsocialmedia{
+		font-size: 0.8em;
+		margin: 0 10% 0 3%;
+	}
 	.hpsocialmedia h4{
 		font-size: 1em;
 	}
@@ -1005,6 +1071,10 @@ font-size: 0.7em
 		margin: 0.5em 1em;
 		max-width: 40%;
 	}
+
+	.hpdonate2 {
+		width: 100%
+}
 
 	.hpdonate2 p{
 		font-size: 0.2em;
@@ -1048,6 +1118,7 @@ font-size: 0.7em
 	header div img{
 		margin-top: 0.5em;
 		margin-left: 0.6em;
+		padding-left: 0.3em;
 		max-width: 35%
 	}
 
@@ -1105,24 +1176,35 @@ font-size: 0.7em
 
 	.hpcontact {
 		margin-left: 3%;
-		font-size: 0.3em;;
-	}
-
-	.hpcontact li{
 		font-size: 0.3em;
 	}
 
+	.hpcontact li{
+		font-size: 1em;
+	}
+
 	div h4{
-		font-size: 0.5em;
+		font-size: 0.4em;
 	}
 
 	.hpsocialmedia h4{
-		font-size: 0.5em;
+		font-size: 0.4em;
+	}
+
+	/* * {border: 1px solid red;} */
+
+	.hpsocialmedia{
+		margin: 0 1em 0 0;
 	}
 
 	.hpsocialmedia a img{
-		margin: 0.5em 1em;
+		margin: 0.5em 1.5em 0 0;
 		max-width: 40%;
+	}
+
+	.hpdonate2{
+		width: 100%;
+		margin-left: -10%;
 	}
 
 	.hpdonate2 p{

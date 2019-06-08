@@ -7,6 +7,21 @@
 
 /* * {border: 1px solid red;} */
 
+
+
+/*TO-DO LIST
+
+Patreon button doesnt hover
+make all UI buttons into html tag buttons
+Blurry cyr pic on about page
+different color (not blue) for inline links
+Contact page Send button same as the rest
+make footer fonts uniform/put logos on two lines
+check formspree 
+
+
+
+*/
 * {
 margin: 0;padding: 0;box-sizing: border-box;
 }
@@ -309,8 +324,8 @@ footer {
 display: flex;
 justify-content: space-between;
 background-color: black;
-padding-top: 2%;
-padding-bottom: 5%;
+padding-top: 1%;
+padding-bottom: 2%;
 color: white;
 clear: both;
 position: absolute;
@@ -318,9 +333,11 @@ margin-top: -40px;
 }
 
 footer div{
+justify-content: space-between;
 max-width: 33%;
 float: left; 
 }	
+
 
 
 .about:after, .contact:after, .reserve-form:after, .header:after, .donate:after, .firstcourse:after, footer:after, .instructor:after, .course:after {
@@ -539,9 +556,11 @@ color: white;
 line-height: 1.5em;
 }
 
+
 p.button{
-	margin: 10% 34% ;
-	text-align: center;
+	margin: 5% 0;
+	margin-left: 37%;
+	margin-right: 44%
 }
 
 .book-upper:hover{
@@ -694,6 +713,8 @@ p.label {
 
 @media only screen and (max-device-width: 1440px ) {
 
+	/* * {border: 1px solid red;} */
+
 
 	header {
 		padding: 0;
@@ -709,34 +730,40 @@ p.label {
 
 
 	.contact{
-		margin-left: 3%;
+		margin-left: 5%;
 	}
 
 	.contact h4{
-		font-size: 3vw;
+		font-size: 2vw;
 	}
 	.contact li{
-		font-size: 2vw;
+		font-size: 1.1vw;
 	}
 
 	.socialmedia{
-		font-size: 3vw;
+		font-size: 2vw;
+		margin:0 15% 0 25%;
+	}
+
+	.donate2{
+		width: 30%;
 	}
 
 	.donate2 h4{
-		font-size: 3vw;
+		font-size: 1.9vw;
+		width: 100%;
 	}
 
 	.socialmedia a img{
-		margin: 0.5em 1em;
-		max-width: 40%;
+		/* margin: 0.5em 1em; */
+		max-width: 25%;
 	}
 
 	.donate2 p{
-		font-size: 2vw;
+		font-size: 1.1vw;
 		color: white;
 		padding-top: 0.6em;
-		padding-bottom: 1.5em;
+		width: 90%
 	}
 
 	.donate2 a {
@@ -746,7 +773,7 @@ p.label {
 		height: 150px; 
 		background: rgb(4, 215, 159);
 		font-family: 'lato','light', 'sans-serif';
-		font-size: 1.5vw;
+		font-size: 1vw;
 		color: black;
 		}
 
@@ -1716,16 +1743,23 @@ font-size: 0.7em
 
 	.socialmedia{
 		font-size: 2em;
+		margin: 0 10% 0 5%;
 	}
-
 	.donate2 h4{
 		font-size: 2em;
 	}
 
+
+	/* * {border: 1px solid red;} */
+
 	.socialmedia a img{
-		margin: 1em 1em;
+		margin: 1em 1em 0 1em;
 		max-width: 40%;
 	}
+
+	.donate2{
+	width: 100%;
+}
 
 	.donate2 p{
 		font-size: 1.5em;
@@ -1849,24 +1883,26 @@ font-size: 0.7em
 	}
 
 	.contact h4{
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 	.contact li{
 		font-size: 1.5em;
 	}
 
 	.socialmedia{
-		font-size: 2em;
+		font-size: 1.5em;
+		margin: 0 5% 0 5%;
 	}
 
 	.donate2 h4{
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 
 	.socialmedia a img{
 		margin: 0.5em 1em;
 		max-width: 40%;
 	}
+
 
 	.donate2 p{
 		font-size: 1.5em;
