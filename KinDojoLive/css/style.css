@@ -11,13 +11,16 @@
 
 /*TO-DO LIST
 
+start at 475px view, finish making footers uniform
+
 Patreon button doesnt hover
 make all UI buttons into html tag buttons
 Blurry cyr pic on about page
 different color (not blue) for inline links
 Contact page Send button same as the rest
-make footer fonts uniform/put logos on two lines
 check formspree 
+
+THEN hamburger menu for mobile
 
 
 
@@ -953,19 +956,22 @@ p.label {
 
 	.socialmedia{
 		font-size: 2em;
-	}
-
-	.donate2 h4{
-		font-size: 2em;
+		margin: 0 2em 0 2em;
 	}
 
 	.socialmedia a img{
-		margin: 1em 1em;
+		margin: 0.5em 1em;
 		max-width: 30%;
 	}
 
+
+
+	.donate2 h4{
+		font-size: 1.8em;
+	}
+
 	.donate2 p{
-		font-size: 1.5em;
+		font-size: 1.3em;
 		color: white;
 		padding-top: 0.6em;
 		padding-bottom: 1.5em;
@@ -1289,7 +1295,7 @@ font-size: 0.7em
 @media only screen and (max-device-width: 768px ) {
 
 	header {
-		height:17%;
+		height:11%;
 	}
 
 	header img{
@@ -1316,19 +1322,25 @@ font-size: 0.7em
 
 	.socialmedia{
 		font-size: 2em;
+		margin: 0;
 	}
 
-	.donate2 h4{
-		font-size: 2em;
-	}
 
 	.socialmedia a img{
-		margin: 1em 1em;
+		margin: 0 0 1em 1em;
 		max-width: 30%;
 	}
 
+	.donate2 {
+		width: 100%
+	}
+
+	.donate2 h4{
+		font-size: 1.8em;
+	}
+
 	.donate2 p{
-		font-size: 1.5em;
+		font-size: 1.2em;
 		color: white;
 		padding-top: 0.6em;
 		padding-bottom: 1.5em;
@@ -1488,7 +1500,7 @@ font-size: 0.7em
 	}
 
 	header div img{
-		margin-top: 1.5em;
+		margin-top: 1em;
 		margin-left: -1em;
 		max-width: 52%
 	}
@@ -1513,6 +1525,7 @@ font-size: 0.7em
 
 
 
+/* * {border: 1px solid red;} */
 
 	.contact{
 		margin-left: 3%;
@@ -1527,19 +1540,20 @@ font-size: 0.7em
 
 	.socialmedia{
 		font-size: 2em;
-	}
-
-	.donate2 h4{
-		font-size: 2em;
+		margin:0;
 	}
 
 	.socialmedia a img{
-		margin: 1em 1em;
+		margin: 0 0 1em 1em;
 		max-width: 40%;
 	}
 
+	.donate2 h4{
+		font-size: 1.6em;
+	}
+
 	.donate2 p{
-		font-size: 1.5em;
+		font-size: 1em;
 		color: white;
 		padding-top: 0.6em;
 		padding-bottom: 1.5em;
@@ -1749,8 +1763,6 @@ font-size: 0.7em
 		font-size: 2em;
 	}
 
-
-	/* * {border: 1px solid red;} */
 
 	.socialmedia a img{
 		margin: 1em 1em 0 1em;

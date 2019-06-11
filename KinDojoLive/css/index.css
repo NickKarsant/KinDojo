@@ -359,15 +359,11 @@ display: block;
 	}
 
 	.hpcontact li{
-		font-size: 1em;
+		font-size: 1.5em;
 	}
 
 	div h4{
-		font-size: 1.5em;
-	}
-
-	.hpsocialmedia h4{
-		font-size: 1.5em;
+		font-size: 2em;
 	}
 
 	.hpsocialmedia{
@@ -376,12 +372,11 @@ display: block;
 	}
 
 	.hpsocialmedia a img{
-		/* margin: 0.5em 1em; */
 		max-width: 30%;
 	}
 
 	.hpdonate2 p{
-		font-size: 1em;
+		font-size: 1.5em;
 		color: white;
 		padding-top: 0.4em;
 		padding-bottom: 2em;
@@ -399,7 +394,7 @@ display: block;
 		height: 150px; 
 		background: rgb(4, 215, 159);
 		font-family: 'lato','light', 'sans-serif';
-		font-size: 1em;
+		font-size: 21.5m;
 		color: black;
 	}
 
@@ -470,7 +465,9 @@ display: block;
 		padding: 0;
 	}
 
+
 	header img{
+		margin-left: -1.5em;
 		max-width: 45%;
 	}
 	
@@ -486,20 +483,20 @@ display: block;
 		padding: 25% 0;
 	}
 
-
 	.mission p{
 		font-size: 1em;
 		padding: 0 1em 1em 1em;
 		line-height:2em;
 	}
 
-
 	footer {
 		max-width: 100%;
+		padding-top: 0;
 	}
 
 	footer div{
 		width: 33%;
+		margin: 0;
 	}
 
 	.hpcontact {
@@ -508,7 +505,7 @@ display: block;
 	}
 
 	.hpcontact li{
-		font-size: 1em;
+		font-size: 1.2em;
 	}
 
 	div h4{
@@ -520,12 +517,13 @@ display: block;
 	}
 
 	.hpsocialmedia a img{
-		/* margin: 0.5em 1em; */
+		margin: 0.5em 1em;
 		max-width: 30%;
 	}
 
+
 	.hpdonate2 p{
-		font-size: 1em;
+		font-size: 1.2em;
 		color: white;
 		padding-top: 0.4em;
 		padding-bottom: 2em;
@@ -730,7 +728,7 @@ font-size: 0.7em
 @media only screen and (max-device-width: 768px ) {
 
 	header{
-		height: 16%;
+		height: 14%;
 		width: 100%;
 	}
 
@@ -757,16 +755,6 @@ font-size: 0.7em
 		font-size: 1.5em;
 	}
 
-	header div{
-		margin-left: -1.7em;
-	}
-/* 
-	.cover p{
-		font-size: 0.7em;
-		justify-content: center;
-		align-items: flex-start;
-		max-width: 100%;
-	} */
 
 	.cover button{
 		margin-top: 3em;
@@ -802,11 +790,15 @@ font-size: 0.7em
 	}
 
 	.hpcontact li{
-		font-size: 1em;
+		font-size: 1.1em;
 	}
 
 	div h4{
 		font-size: 1.7em;
+	}
+
+	.hpsocialmedia{
+		margin: 0;
 	}
 
 	.hpsocialmedia h4{
@@ -816,6 +808,14 @@ font-size: 0.7em
 	.hpsocialmedia a img{
 		margin: 0.5em 1em;
 		max-width: 40%;
+	}
+
+	.hpdonate2 h4{
+		font-size: 1.5em;
+	}
+
+	.hpdonate2 {
+		width: 100%;
 	}
 
 	.hpdonate2 p{
@@ -930,10 +930,18 @@ font-size: 0.7em
 	.hpsocialmedia h4{
 		font-size: 1em;
 	}
+	.hpsocialmedia{
+		margin: 0;
+	}
 
 	.hpsocialmedia a img{
 		margin: 0.5em 1em;
 		max-width: 40%;
+	}
+/* * {border: 1px solid red;} */
+
+	.hpdonate2{
+		width: 50%;
 	}
 
 	.hpdonate2 p{
@@ -942,22 +950,21 @@ font-size: 0.7em
 		padding-top: 0.4em;
 		padding-bottom: 1em;
 	}
+	.hpdonate2 h4{
+		font-size:0.8em;
+	}
 
 	.hpdonate2 a {
-		padding: .5em 2em;
 		border-radius: 9%;
 		width: 200px;
 		height: 150px; 
 		background: rgb(4, 215, 159);
 		font-family: 'lato','light', 'sans-serif';
-		font-size: 1em;
+		font-size: 0.2em; 
+		padding: 1em 1em;
 		color: black;
 		}
 
-	.hpdonate2 a{
-		font-size: 0.2em; 
-		padding: 1em 1em;
-	} 
 
 }
 
@@ -1116,7 +1123,7 @@ font-size: 0.7em
 	}
 
 	header div img{
-		margin-top: 0.5em;
+		margin-top: 0.3em;
 		margin-left: 0.6em;
 		padding-left: 0.3em;
 		max-width: 35%
