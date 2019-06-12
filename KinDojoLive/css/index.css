@@ -107,10 +107,6 @@ section {
 padding: 5%;
 }
 
-section a:hover{
-opacity: 0.6;
-}
-
 
 .cover {
 background-color: black;
@@ -140,8 +136,10 @@ padding: 20% 0;
 margin: 5em 0;
 }
 
+
+
 button.button{
-	padding: .5em 1.8em;
+	padding: 0.5em 1.8em;
 	border-radius: 9%;
 	background: rgb(4, 215, 159);
 	font-family: 'Lato', 'light', 'sans-serif';
@@ -150,7 +148,7 @@ button.button{
 }
 
 
-.button:hover, .donate2 a:hover, .hpsocialmedia a:hover {
+.button:hover, .donate2 a:hover, .hpsocialmedia a:hover, section a:hover, .hpdonate2 button:hover {
 opacity: .4;
 
 }
@@ -234,6 +232,13 @@ max-width: 15%;
 .hpcontact {
 margin-left: 15%;
 }
+.hpcontact a{
+color: rgb(4, 215, 159);
+}
+	
+.hpcontact li a:hover{
+opacity: 0.4;
+}
 
 
 div p{
@@ -252,26 +257,21 @@ color: rgb(4, 215, 159);
 }
 
 
-.donate2 p {
-color: white;
-text-align: left;
-padding-top: 1em;
-line-height: 1.4em; 
-letter-spaceing: .1em;
-word-spacing: .1em;
-font-size: 0.7em;
+/* * {border: 1px solid red;} */
+
+
+button.patreon{
+	padding: 1em 1.8em;
+	border-radius: 9%;
+	background: rgb(4, 215, 159);
+	font-family: 'Lato', 'light', 'sans-serif';
+	color: black;
+	font-size: 1em;
+	margin-top: 0.5em;
 }
 
-.donate2 a {
-padding: .5em 2em;
-border-radius: 9%;
-width: 200px;
-height: 150px; 
-background: rgb(4, 215, 159);
-font-family: 'lato','light', 'sans-serif';
-font-size: 0.8em;
-color: black;
-}
+
+
 
 footer {
 display: flex;
@@ -359,11 +359,11 @@ display: block;
 	}
 
 	.hpcontact li{
-		font-size: 1.5em;
+		font-size: 1.2em;
 	}
 
 	div h4{
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 
 	.hpsocialmedia{
@@ -376,10 +376,9 @@ display: block;
 	}
 
 	.hpdonate2 p{
-		font-size: 1.5em;
+		font-size: 1.2em;
 		color: white;
 		padding-top: 0.4em;
-		padding-bottom: 2em;
 	}
 
 	.hpdonate2{
@@ -394,7 +393,7 @@ display: block;
 		height: 150px; 
 		background: rgb(4, 215, 159);
 		font-family: 'lato','light', 'sans-serif';
-		font-size: 21.5m;
+		font-size: 1.2em;
 		color: black;
 	}
 
@@ -526,19 +525,16 @@ display: block;
 		font-size: 1.2em;
 		color: white;
 		padding-top: 0.4em;
-		padding-bottom: 2em;
+		padding-bottom: 1em;
 	}
 
-	.hpdonate2 a {
-		margin-top: 2em;
-		padding: 0.7em 2em;
+	button.patreon{
+		padding: 1em 1.2em;
 		border-radius: 9%;
-		width: 200px;
-		height: 150px; 
 		background: rgb(4, 215, 159);
-		font-family: 'lato','light', 'sans-serif';
-		font-size: 1em;
+		font-family: 'Lato', 'light', 'sans-serif';
 		color: black;
+		font-size: 1.2em;
 	}
 
 	
@@ -825,16 +821,14 @@ font-size: 0.7em
 		padding-bottom: 2em;
 	}
 
-	.hpdonate2 a {
-		margin-top: 2em;
-		padding: 0.7em 2em;
+	button.patreon{
+		padding: 0.5em 1em;
 		border-radius: 9%;
-		width: 200px;
-		height: 150px; 
 		background: rgb(4, 215, 159);
-		font-family: 'lato','light', 'sans-serif';
-		font-size: 1em;
+		font-family: 'Lato', 'light', 'sans-serif';
 		color: black;
+		font-size: 1em;
+		margin-top: 0.5em;
 	}
 
 }
@@ -954,16 +948,15 @@ font-size: 0.7em
 		font-size:0.8em;
 	}
 
-	.hpdonate2 a {
+	button.patreon{
+		padding: 0.5em 1em;
 		border-radius: 9%;
-		width: 200px;
-		height: 150px; 
 		background: rgb(4, 215, 159);
-		font-family: 'lato','light', 'sans-serif';
-		font-size: 0.2em; 
-		padding: 1em 1em;
+		font-family: 'Lato', 'light', 'sans-serif';
 		color: black;
-		}
+		font-size: 0.3em;
+		margin-top: 0.5em;
+	}
 
 
 }
@@ -1090,21 +1083,15 @@ font-size: 0.7em
 		padding-bottom: 1em;
 	}
 
-	.hpdonate2 a {
-		padding: .5em 2em;
+	button.patreon{
+		padding: 0.5em 1em;
 		border-radius: 9%;
-		width: 200px;
-		height: 150px; 
 		background: rgb(4, 215, 159);
-		font-family: 'lato','light', 'sans-serif';
-		font-size: 0.8em;
+		font-family: 'Lato', 'light', 'sans-serif';
 		color: black;
-		}
-
-	.hpdonate2 a{
-		font-size: 0.2em; 
-		padding: 1em 1em;
-	} 
+		font-size: 0.2em;
+		margin-top: 0.5em;
+	}
 
 }
 
@@ -1221,16 +1208,15 @@ font-size: 0.7em
 		padding-bottom: 1em;
 	}
 
-	.hpdonate2 a {
-		padding: 1em 1em;
+	button.patreon{
+		padding: 0.5em 1em;
 		border-radius: 9%;
-		width: 200px;
-		height: 150px; 
 		background: rgb(4, 215, 159);
-		font-family: 'lato','light', 'sans-serif';
-		font-size: 0.2em;
+		font-family: 'Lato', 'light', 'sans-serif';
 		color: black;
-		}
+		font-size: 0.2em;
+		margin-top: 0.5em;
+	}
 
 
 
