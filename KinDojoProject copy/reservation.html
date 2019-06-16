@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+			<title>FlowArts D&omacr;j&omacr;: Book a Class</title>
+
+		<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+		<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+		<script src="js/main.js"></script>
+
+
+		<meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+
+
+	</head>
+
+	<body>
+		
+		<header>
+			<div>
+				<img src="logos/header.png" alt="kindojo logo">
+			</div>
+			<nav>
+				<li> <a href="index.html">D&omacr;j&omacr;</a></li>
+				<li> <a href="classes.html">Classes</a></li>
+				<li> <a href= "aboutus.html">About</a></li>
+				<li> <a href= "contact.html">Contact</a></li>
+			</nav>
+
+		</header>
+
+
+		<section class="reserveform">
+			<h1 align="center">Booking</h1>
+
+			<form  class="reservation-form" action="https://formspree.io/flowartsdojo@gmail.com" method="POST">
+				
+				<div id="left">
+					<div class = "form-group">
+						Name
+						<br>
+						<input id="name" type="text" name="name" class="reservation-name">
+					</div>
+					
+					<div class = "form-group">
+						Email
+						<br>
+						<input id="email" type="email" name="email" class="reservation-email">
+					</div>
+
+
+					<div class = "form-group">
+						Date
+						<br>
+						<input id="date" type="date" name="date" class="reservation-date">
+					</div>
+
+					<div class = "form-group">
+						Start Time 
+						<br>
+						<input id="starttime" type="time" name="starttime" class="reservation-time">
+						<span id="early">
+							First class at 9AM  Last class at 6PM
+						</span>
+					</div>
+
+					<div class = "form-group">
+						End Time
+						<br>
+						<input id="endtime" type="time"  name="endtime" class="reservation-time">
+						<div id="late">
+						Last class ends at 7PM
+						</div>
+					</div>
+					
+					<div class = "form-group">
+						# of Students: <select id="students" name="students" class="1-20"></select>
+					</div>
+
+					<div class="form-group">
+						<label>Choose a class
+							<br>
+							<input id="lesson" type="text" list="classes" name="lesson" class="reservation-lesson" />
+						</label>
+						<datalist id="classes">
+							<option value="Body Fundamentals">
+							<option value="Poi">
+							<option value="Rope Dart">
+							<option value="Dragon Staff">
+							<option value="Contact Staff">
+							<option value="Bullwhip">
+							<option value="Nunchucks">
+							<option value="Puppyhammer">
+						</datalist>
+						<p id="exception">To book the Intro to Fire-Spinning class,
+							please contact the instructor</p>
+					</div>
+
+					<span id="required">All fields required</span>
+					<span id="apptime">Please select an appropriate time</span>
+					<span id="complete">Confirmation Email Sent.</span>
+
+					<br>
+					<input id="bookclass" class="btn btn-default set-reservation" type="submit" value="Book Class"></input>
+					<br><br><br>
+				</div>
+
+
+
+				<div id="#right">
+					<div class="form-group">
+						<label>Location: Choose a park in San Francisco
+							<br>
+							<input id="pac-input" list="locations" class="controls" type="text" placeholder="Search Box">
+							<datalist id="locations">
+							<option value="Robin Williams Meadow">
+							<option value="Mission-Dolores Park">
+							<option value="Precita Park">
+						</datalist>
+
+						<div id="map"></div>
+						<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVwsGKfYVZ1rgq25xSFleJE3rEXXtmcog&callback=initMap&libraries=places&callback=initAutocomplete"
+						async defer></script>
+
+
+
+					</div>
+				</div>
+
+			</form>
+
+
+	
+		</section>
+
+		<footer>
+
+			<div class="contact">
+				<h4>Contact</h4>
+				<li>Phone: 415-713-1130</li>
+				<li>Email: <a href="mailto:kindojo@gmail.com?subject=Booking">kindojo@gmail.com</a></li>
+			</div>
+		
+
+	
+			<div class="socialmedia">
+				<h4>Follow</h4>
+	
+				<link>
+					<a href="https://www.instagram.com/kindojo_flowarts/?hl=en" target="_blank"> <img src="images/Social Media Icons/iconfinder_2018_social_media_popular_app_logo_instagram_3225191.png" alt="instagram logo"></a>
+
+					<a href="https://www.facebook.com/kindojoflow" target="_blank"> <img src="images/Social Media Icons/iconfinder_2018_social_media_popular_app_logo_facebook_3225194.png" alt="facebook logo"> </a>
+	
+				</link>
+			</div>
+		
+	
+
+			<div class="donate2">
+				<h4>Donate to the Flow Arts</h4>
+				<p>Help support a student's learning by donating to KinD&omacr;j&omacr;. 
+					Your donation will be used to purchase practice props of varying sizes to allow people of all ages to participate.</p>
+				<br>
+				<a href="https://www.patreon.com/bePatron?u=19117719" target="_blank">Become a Patron</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+
+				<!-- <a href="https://www.patreon.com/flowartsdojo">DONATE</a> -->
+			</div>
+		
+
+		</footer>
+		<!-- AIzaSyAVwsGKfYVZ1rgq25xSFleJE3rEXXtmcog -->
+
+
+		<script>
+
+
+		function initAutocomplete() {
+			var map = new google.maps.Map(document.getElementById('map'), {
+				center: {lat: 37.773972, lng: -122.431297},
+				zoom: 11
+			});
+			
+
+
+			// Create the search box and link it to the UI element.
+			var input = document.getElementById('pac-input');
+			var searchBox = new google.maps.places.SearchBox(input);
+			map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+			// Bias the SearchBox results towards current map's viewport.
+			map.addListener('bounds_changed', function() {
+				searchBox.setBounds(map.getBounds());
+			});
+
+
+
+			var markers = [];
+			// Listen for the event fired when the user selects a prediction and retrieve
+			// more details for that place.
+			searchBox.addListener('places_changed', function() {
+				var places = searchBox.getPlaces();
+
+				if (places.length == 0) {
+					return;
+				}
+
+				
+
+				// Clear out the old markers.
+				markers.forEach(function(marker) {
+					marker.setMap(null);
+				});
+				markers = [];
+
+				// For each place, get the icon, name and location.
+				var bounds = new google.maps.LatLngBounds();
+				places.forEach(function(place) {
+					if (!place.geometry) {
+						console.log("Returned place contains no geometry");
+						return;
+					}
+					var icon = {
+						url: place.icon,
+						size: new google.maps.Size(71, 71),
+						origin: new google.maps.Point(0, 0),
+						anchor: new google.maps.Point(17, 34),
+						scaledSize: new google.maps.Size(25, 25)
+					};
+
+					// Create a marker for each place.
+					markers.push(new google.maps.Marker({
+						map: map,
+						icon: icon,
+						title: place.name,
+						position: place.geometry.location
+					}));
+
+					if (place.geometry.viewport) {
+						// Only geocodes have viewport.
+						bounds.union(place.geometry.viewport);
+					} else {
+						bounds.extend(place.geometry.location);
+					}
+				});
+				map.fitBounds(bounds);
+			});
+		}
+
+
+			$('.reservation-form').on('submit', function(event) {
+				event.preventDefault();
+				doValidation();
+			});
+		</script>
+
+
+	</body>
+</html>

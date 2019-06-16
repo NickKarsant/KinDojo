@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html id="confirmation">
+<head>
+		<!-- <link rel="stylesheet" type="text/css" href="css/confirmemail.css"> -->
+		<script src="js/main.js"></script>
+
+	<title>Payment & Confirmation Email</title>
+
+</head>
+<style>
+/* * {border: 1px solid red;} */
+
+body {
+	border: 3px;
+	border-color: white;
+	border-style: solid;
+	font-size: 1.4em;
+	color: white;
+	background-color: black;
+}
+
+#logo{
+	margin: auto;
+	text-align: center;
+	width: 100%;
+}
+
+div {
+	width: 70%;
+  height: 10px;
+	border-bottom: 2px solid  rgb(4, 215, 159);
+	margin: auto;
+	align-content: center;
+
+}
+
+#appt{
+	margin: auto;
+  width: 50%;
+	padding: 10px;
+	text-align: center;
+}
+
+#data {
+	margin: auto;
+  width: 50%;
+	padding: 20px;
+}
+
+
+#pay{
+	margin: auto;
+  width: 50%;
+	padding: 10px;
+	border: 3px;
+	border-color: rgb(4, 215, 159);
+	border-style: solid;
+}
+
+a:hover{
+	opacity: 0.3;
+}
+
+#total{
+	font-size: 1.3em;
+}
+
+#p{
+	font-size: 0.7em;
+}
+
+img{
+	width: 40%;
+}
+
+
+
+
+</style>
+
+	<body>
+
+		<table id="logo">
+			<tr>
+				<td>
+					<img src="data:image/png;base64,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" alt="flow arts dojo logo">
+				</td>
+			</tr>
+		</table>
+
+		<table id="appt">
+			<tr>
+			<td id="a">
+				Appointment scheduled 
+			</td>
+			</tr>
+			<tr>
+			<td id="b">
+				for {name}
+			</td>
+			</tr>
+		</table>
+
+		<div></div>
+
+		<table id="data"> 
+			<tr id="details">
+				<td>What: </td>
+				<td>{class}</td>
+			</tr>
+			<tr id="details">
+				<td>When:</td>
+				<td>{date}</td>
+				<td>{startime} - {endtime}</td>
+			</tr>
+			<tr id="details">
+				<td>Where: </td>
+				<td>{location}</td>
+			</tr>
+			<tr id="details">
+				<td>Students: </td>
+				<td>(students)</td>
+			</tr>
+		</table>
+
+		<table id="pay">
+			<tr>
+				<td id="total">Total: ${total}</td>
+			</tr>
+			<tr>
+				<td id="p">To complete this booking, please follow the Paypal link to payment.</td> 
+			</tr>
+			<tr>
+				<td> <a href="https://www.paypal.me/flowartsdojo"><img src="https://deschutespioneers.org/wp-content/uploads/2017/06/dpa-paypal-button.png"></a> </td>
+			</tr>
+			
+
+		</table>
+
+		<script>
+		
+		</script>
+
+	</body>
+</html>

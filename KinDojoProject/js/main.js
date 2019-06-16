@@ -163,7 +163,8 @@ function validStartTimeInput() {
     // Check to see whether the user has entered a value to the time field.
     if (startTimeInput.value === '') {
       // If the email field is blank, display a message to the user.
-			
+			document.getElementById('apptime').style.display = "none";
+
       // Add an error class to the input field that will give it a red border.
 			startTimeInput.className = 'error';
 			return false;
