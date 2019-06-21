@@ -11,6 +11,8 @@
 margin: 0;padding: 0;box-sizing: border-box;
 }
 
+
+
 .homepage {
 background: black;
 font-family: 'Lato', 'light', 'sans-serif';
@@ -40,6 +42,11 @@ z-index: 1;
 max-width: 100%;
 width: 100%;
 }
+
+#hamnav{
+	display: none;
+}
+
 
 
 nav {
@@ -840,6 +847,54 @@ font-size: 0.7em
 @media only screen and (max-device-width: 425px ) {
 
 
+	
+	.hamburger{
+		justify-content: center;
+		transform: translateY(25%);
+	}
+	
+	.hamburger span{
+		background: rgb(4, 215, 159);
+		width: 30px;
+		height: 4px;
+		display: block;
+		margin: 0 10px 5px 0;
+	}
+
+	.default-menu{
+		display: none;
+	}
+
+	.nav a{
+		display: block;
+		margin-top: 1em;
+		color: rgb(4, 215, 159);
+		padding: 0;
+		text-align: left;
+		margin-left: 3em;
+	}
+
+
+	#hamnav{
+		display: none;
+	}
+
+	#hamnav.active{
+		background: #212121;
+		position: fixed; /*Sit on top of the page content */
+		display: block; /* Hidden by default */
+		width: 100%; /* Full width (cover the whole page) */
+		height: 280%; /* Full height (cover the whole page) */
+		top: 100%; 
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin-left: 0;
+	}
+	
+
+
+
 	header{
 		height: 10%;
 		width: 100%;
@@ -973,6 +1028,59 @@ font-size: 0.7em
 
 @media only screen and (max-device-width:375px ) {
 
+	.hamburger{
+		justify-content: center;
+		transform: translateY(25%);
+	}
+	
+	.hamburger span{
+		background: rgb(4, 215, 159);
+		width: 30px;
+		height: 4px;
+		display: block;
+		margin: 0 10px 5px 0;
+	}
+
+	.default-menu{
+		display: none;
+	}
+
+	.nav a{
+		display: block;
+		margin-top: 1em;
+		color: rgb(4, 215, 159);
+		padding: 0;
+		text-align: left;
+		margin-left: 3em;
+	}
+
+
+	#hamnav{
+		display: none;
+	}
+
+	#hamnav.active{
+		background: #212121;
+		position: fixed; /*Sit on top of the page content */
+		display: block; /* Hidden by default */
+		width: 100%; /* Full width (cover the whole page) */
+		height: 280%; /* Full height (cover the whole page) */
+		top: 100%; 
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin-left: 0;
+	}
+	
+
+
+
+
+
+
+
+
+
 	header{
 		height: 9%;
 		width: 100%;
@@ -1001,9 +1109,6 @@ font-size: 0.7em
 		font-size: 0.7em;
 	}
 
-	header div{
-		margin-left: -1.7em;
-	}
 
 	.cover p{
 		font-size: 0.7em;
@@ -1057,8 +1162,6 @@ font-size: 0.7em
 		font-size: 0.8em;
 	}
 
-/* * {border: 1px solid red;} */
-
 	.hpsocialmedia{
 		font-size: 0.8em;
 		margin: 0 10% 0 3%;
@@ -1100,13 +1203,56 @@ font-size: 0.7em
 @media only screen and (max-device-width:320px ) {
 
 
+	.hamburger{
+		transform: translateY(25%);
+	}
+	
+	.hamburger span{
+		background: rgb(4, 215, 159);
+		width: 30px;
+		height: 4px;
+		display: block;
+		margin: 0 10px 5px 0;
+	}
+
+	.default-menu{
+		display: none;
+	}
+
+	.nav a{
+		display: block;
+		margin-top: 0.7em;
+		color: rgb(4, 215, 159);
+		padding: 0;
+		text-align: left;
+		margin-left: 3em;
+	}
+
+
+	#hamnav{
+		display: none;
+	}
+
+	#hamnav.active{
+		background: #212121;
+		position: fixed; /*Sit on top of the page content */
+		display: block; /* Hidden by default */
+		width: 100%; /* Full width (cover the whole page) */
+		height: 275%; /* Full height (cover the whole page) */
+		top: 100%; 
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin-left: 0;
+	}
+
 
 
 
 	/* * {border: 1px solid red;} */
 
 	header{
-		height: 7%;
+		height: 8%;
 	}
 
 	header div img{

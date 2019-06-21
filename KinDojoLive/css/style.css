@@ -9,17 +9,13 @@
 
 
 
-/*TO-DO LIST
 
 
-THEN hamburger menu for mobile
-
-
-
-*/
 * {
 margin: 0;padding: 0;box-sizing: border-box;
 }
+
+
 
 .homepage {
 background: black;
@@ -1494,6 +1490,52 @@ font-size: 0.7em
 
 @media only screen and (max-device-width: 425px ) {
 	
+	.hamburger{
+		justify-content: center;
+		transform: translateY(25%);
+	}
+	
+	.hamburger span{
+		background: rgb(4, 215, 159);
+		width: 80px;
+		height: 10px;
+		display: block;
+		margin: 0 20px 13px 0;
+	}
+
+	.default-menu{
+		display: none;
+	}
+	
+	.nav a{
+		font-size: 3em;
+		display: block;
+		margin-top: 0.7em;
+		color: rgb(4, 215, 159);
+		padding: 0;
+		text-align: left;
+		margin-left: 2em;
+	}
+
+
+	#hamnav{
+		display: none;
+	}
+
+	#hamnav.active{
+		background: #212121;
+		position: fixed; /*Sit on top of the page content */
+		display: block; /* Hidden by default */
+		width: 100%; /* Full width (cover the whole page) */
+		height: 280%; /* Full height (cover the whole page) */
+		top: 100%; 
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin-left: 0;
+	}
+
+
 	header{
 		height: 10%;
 		width: 100%;
@@ -1732,6 +1774,51 @@ font-size: 0.7em
 @media only screen and (max-device-width:375px ) {
 
 
+	.hamburger{
+		justify-content: center;
+		transform: translateY(25%);
+	}
+	
+	.hamburger span{
+		background: rgb(4, 215, 159);
+		width: 80px;
+		height: 10px;
+		display: block;
+		margin: 0 20px 13px 0;
+	}
+
+	.default-menu{
+		display: none;
+	}
+	
+	.nav a{
+		font-size: 3em;
+		display: block;
+		margin-top: 0.7em;
+		color: rgb(4, 215, 159);
+		padding: 0;
+		text-align: left;
+		margin-left: 2em;
+	}
+
+
+	#hamnav{
+		display: none;
+	}
+
+	#hamnav.active{
+		background: #212121;
+		position: fixed; /*Sit on top of the page content */
+		display: block; /* Hidden by default */
+		width: 100%; /* Full width (cover the whole page) */
+		height: 280%; /* Full height (cover the whole page) */
+		top: 100%; 
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin-left: 0;
+	}
+
 
 	header {
 		height:9%;
@@ -1883,6 +1970,51 @@ font-size: 0.7em
 
 
 	/* * {border: 1px solid red;} */
+
+
+	.hamburger{
+		transform: translateY(25%);
+	}
+	
+	.hamburger span{
+		background: rgb(4, 215, 159);
+		width: 80px;
+		height: 10px;
+		display: block;
+		margin: 0 20px 13px 0;
+	}
+
+	.default-menu{
+		display: none;
+	}
+
+	.nav a{
+		font-size: 3em;
+		display: block;
+		margin-top: 0.7em;
+		color: rgb(4, 215, 159);
+		padding: 0;
+		text-align: left;
+		margin-left: 2em;
+	}
+
+
+	#hamnav{
+		display: none;
+	}
+
+	#hamnav.active{
+		background: #212121;
+		position: fixed; /*Sit on top of the page content */
+		display: block; /* Hidden by default */
+		width: 100%; /* Full width (cover the whole page) */
+		height: 250%; /* Full height (cover the whole page) */
+		top: 100%; 
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin-left: 0;
+	}
 
 	header {
 		height: 8%;
