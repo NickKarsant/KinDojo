@@ -702,6 +702,10 @@ p.label {
 	/* * {border: 1px solid red;} */
 
 
+	#hamnav{
+		display: none;
+	}
+
 	header {
 		padding: 0;
 	}
@@ -912,6 +916,10 @@ p.label {
 
 
 	/* * {border: 1px solid red;} */
+
+	#hamnav{
+		display: none;
+	}
 
 	header {
 		height:15%;
@@ -1284,6 +1292,12 @@ font-size: 0.7em
 
 
 @media only screen and (max-device-width: 768px ) {
+
+
+
+	#hamnav{
+		display: none;
+	}
 
 	header {
 		height:11%;
